@@ -4,7 +4,7 @@
 
 ## Sobre Mim
 
-Sou uma iniciante apaixonada por programação e desenvolvimento web, minha intenção é ser FullStack Developer e este portfólio é uma vitrine dos meus aprendizados e projetos iniciais, construídos com as tecnologias que tenho explorado: HTML, CSS e JavaScript.
+Sou uma iniciante apaixonada por programação e desenvolvimento web, minha intenção é ser Front-end Developer e este portfólio é uma vitrine dos meus aprendizados e projetos iniciais, construídos com as tecnologias que tenho explorado: HTML, CSS e JavaScript.
 
 Embora ainda esteja no começo da minha jornada como desenvolvedora, sou dedicada a aprender continuamente e a aplicar meus conhecimentos em projetos práticos. Acredito que a prática constante e a busca por novos desafios são essenciais para o crescimento na área de tecnologia.
 
