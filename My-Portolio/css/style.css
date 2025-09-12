@@ -1,14 +1,14 @@
 :root {
 
   /* Light theme colors */
-  --light-background: #050406;
-  --light-surface: #e2e8f0;
-  --light-text-primary: #b2a7cc;
-  --light-text-secondary: #4b3778;
-  --light-accent: #7654c3;
-  --light-border: #cbd5e1;
-  --light-shadow: #0f172a1a;
-  --light-hover: #f1f5f9;
+  --light-background: #f7f9fb;
+  --light-surface: #fff;
+  --light-text-primary: #6485b0;
+  --light-text-secondary: #9e9dcd;
+  --light-accent: #8579bb;
+  --light-border: #d4e0ee;
+  --light-shadow: #6485b01a;
+  --light-hover: #e0e6f3;
  
   /* Shadows */
   --shadow-1: -4px 8px 24px #00000040;
@@ -21,7 +21,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
 body{
@@ -35,18 +35,54 @@ line-height: 1.6;
 
 .container{
 max-width: 1200px;
+margin: 0 auto;
+padding: 0 24px;
+
 }
 
-.header-nav{
+/* Header */
+
+.header{
+background: var(--light-surface);
+padding: 25px 0;
+border-bottom: 1px solid var(--light-border);
+
+}
+
+.header-container{
+display: flex;
+justify-content: space-around;
+align-items: center;
+
+}
+
+.header-name{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--light-accent);
 
 }
 
 .header-nav a{
-text-decoration: none;
+ color: var(--light-text-primary);
+ text-decoration: none;
+ transition: color 0.3s ease;
+
+}
+
+.header-nav a:hover{
 color: var(--light-accent);
+
 }
 
 #menu-button{
+background: none;
+border: none;
+color: black;
+cursor: pointer;
+display: block;
+padding: 8px;
+border: 1px solid black
 
 }
 
