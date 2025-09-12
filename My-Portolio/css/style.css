@@ -1,26 +1,15 @@
 :root {
 
   /* Light theme colors */
-  --light-background: #f8fafc;
+  --light-background: #050406;
   --light-surface: #e2e8f0;
-  --light-text-primary: #1e293b;
-  --light-text-secondary: #64748b;
-  --light-accent: #0b3c70;
+  --light-text-primary: #b2a7cc;
+  --light-text-secondary: #4b3778;
+  --light-accent: #7654c3;
   --light-border: #cbd5e1;
   --light-shadow: #0f172a1a;
   --light-hover: #f1f5f9;
  
-
-  /* Dark theme colors for better contrast */
-  --eerie-black: #0f172a;
-  --onyx: #1e293b;
-  --cultured: #f8fafc;
-  --light-gray: #94a3b8;
-  --royal-blue-ae: #3b82f6;
-  --white: #ffffff;
-  --slate-blue: #475569;
-  --steel-blue: #334155;
-
   /* Shadows */
   --shadow-1: -4px 8px 24px #00000040;
   --shadow-2: 0 16px 30px #00000040;
@@ -54,7 +43,7 @@ max-width: 1200px;
 
 .header-nav a{
 text-decoration: none;
-/* color: var(--light-accent); */
+color: var(--light-accent);
 }
 
 #menu-button{
@@ -70,7 +59,7 @@ text-decoration: none;
 color: var(--light-accent);
 }
 
-.main-container{
+main{
 
 }
 
