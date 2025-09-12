@@ -1,8 +1,100 @@
-* {
+:root {
 
+  /* Light theme colors */
+  --light-background: #f8fafc;
+  --light-surface: #e2e8f0;
+  --light-text-primary: #1e293b;
+  --light-text-secondary: #64748b;
+  --light-accent: #0b3c70;
+  --light-border: #cbd5e1;
+  --light-shadow: #0f172a1a;
+  --light-hover: #f1f5f9;
+ 
+
+  /* Dark theme colors for better contrast */
+  --eerie-black: #0f172a;
+  --onyx: #1e293b;
+  --cultured: #f8fafc;
+  --light-gray: #94a3b8;
+  --royal-blue-ae: #3b82f6;
+  --white: #ffffff;
+  --slate-blue: #475569;
+  --steel-blue: #334155;
+
+  /* Shadows */
+  --shadow-1: -4px 8px 24px #00000040;
+  --shadow-2: 0 16px 30px #00000040;
+  --shadow-3: 0 16px 40px #00000040;
+  --shadow-4: 0 25px 50px #00000026;
+  --shadow-5: 0 24px 80px #00000040;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body{
+font-family: "Poppins", sans-serif;
+background: var(--light-background);
+color: var(--light-text-primary);
+scroll-behavior: smooth;
+line-height: 1.6;
+
+}
+
+.container{
+max-width: 1200px;
+}
+
+.header-nav{
+
+}
+
+.header-nav a{
+text-decoration: none;
+/* color: var(--light-accent); */
+}
+
+#menu-button{
+
+}
+
+#mobile-menu{
+
+}
+
+#mobile-menu a{
+text-decoration: none;
+color: var(--light-accent);
+}
+
+.main-container{
+
+}
+
+#about{
+
+}
+
+.about-container{
+
+}
+
+.social-links{
+
+}
+
+#skills{
+
+}
+
+.skills-cards-container{
+
+}
+
+.skills-cards{
 
 }
 

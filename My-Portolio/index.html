@@ -19,31 +19,34 @@
     
     <!-- Header and Navigation -->
      <header>
-      <div class="container">
-        <h1 class="name">Karen Nogueira</h1>
-        <nav class="links">
-          <a href="#" class="about" rel="">Sobre Mim</a>
-          <a href="#" class="skills" rel="">Habilidades</a>
-          <a href="#" class="projects" rel="">Projetos</a>
-          <a href="#" class="contact" rel="">Contato</a>
+      <div class="header-container container">
+        <h1 class="header-name">Karen Nogueira</h1>
+        <nav class="header-nav">
+          <a href="#about" class="nav-link">Sobre Mim</a>
+          <a href="#skills"class="nav-link">Habilidades</a>
+          <a href="#projects" class="nav-link">Projetos</a>
+          <a href="#contact" class="nav-link">Contato</a>
         </nav>
         <button id="menu-button">
+          <svg class="menu-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
           
           <!-- adicionar icone de menu svg-->
         </button>
       </div>
-      <div id="mobile-menu">
-        <a href="#" class="about" rel="">Sobre Mim</a>
-        <a href="#" class="skills" rel="">Habilidades</a>
-        <a href="#" class="projects" rel="">Projetos</a>
-        <a href="#" class="contact" rel="">Contato</a>
+      <div id="mobile-menu" class="mobile-nav">
+        <a href="#about" class="mobile-nav-link">Sobre Mim</a>
+          <a href="#skills" class="mobile-nav-link">Habilidades</a>
+          <a href="#projects" class="mobile-nav-link">Projetos</a>
+          <a href="#contact" class="mobile-nav-link">Contato</a>
       </div>
      </header>
 
      <main class="main-container">
       <!--About Section-->
-      <section id="about">
-        <div class="about-container">
+      <section id="about" class="about-section">
+        <div class="about-container container">
           <h2 class="about-title">Sobre Mim</h2>
           <p class="about-text">
             Meu nome é Karen, sou Desenvolvedora Front-end em formação, apaixonada por tecnologia, programação e inovação. Busco minha primeira oportunidade de estágio em TI   para aplicar meus conhecimentos em desenvolvimento web e contribuir com projetos modernos e desafiadores.
@@ -52,72 +55,76 @@ Minhas principais habilidades incluem resolução de problemas, trabalho em equi
 Após anos de experiência na área da moda, desenvolvi um olhar criativo e atenção aos detalhes, características que agora aplico no desenvolvimento de interfaces intuitivas e responsivas. Desde minha mudança para Brasília em 2022, venho me dedicando intensamente a estudos independentes e cursos especializados em desenvolvimento de software, com o objetivo de ingressar no mercado de trabalho de tecnologia.
 Estou pronta para agregar valor à sua equipe, contribuir em projetos de desenvolvimento Front-end   e crescer profissionalmente como Desenvolvedora Web. Se procura alguém comprometida, com vontade de aprender e evoluir, vamos conversar!
           </p>
-          <div class="links-container">
-            <a href="https://github.com/KarenOnog" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/karenOnogueira" target="_blank">Linkedin</a>
+          <div class="social-links">
+            <a href="https://github.com/KarenOnog" target="_blank" rel="">GitHub</a>
+            <a href="https://www.linkedin.com/in/karenOnogueira" target="_blank" rel="">Linkedin</a>
           </div>
         </div>
       </section>
 
       <!-- Skills Section -->
-       <section id="skills">
-        <div class="skills-cards-container">
+       <section id="skills" class="skills-section">
+        <div class="skills-container container">
           <h2 class="skills-title">Habilidades</h2>
-          <div class="skills-cards">
+          <div class="skills-cards-grid">
           <div class="skills-card">
-            <h3 class="skills-subtitle">Front-end</h3>
-            <p class="skills-text">HTML, CSS, JavaScript, responsividade, UI/UX.</p>
+            <h3 class="card-title">Front-end</h3>
+            <p class="card-text">HTML, CSS, JavaScript, responsividade, UI/UX.</p>
           </div>
           <div class="skills-card">
-            <h3 class="skills-subtitle">Back-end (Básico)</h3>
-            <p class="skills-text">Conhecimento em lógica de programação e Python.</p>
+            <h3 class="card-title">Back-end (Básico)</h3>
+            <p class="card-text">Conhecimento em lógica de programação e Python.</p>
           </div>
           <div class="skills-card">
-            <h3 class="skills-subtitle">Ferramentas</h3>
-            <p class="skills-text">Git e GitHub, metodologias ágeis (Agile, DevOps).</p>
+            <h3 class="card-title">Ferramentas</h3>
+            <p class="card-text">Git e GitHub, metodologias ágeis (Agile, DevOps).</p>
           </div>
           <div class="skills-card">
-            <h3 class="skills-subtitle">Soft Skills</h3>
-            <p class="skills-text">Organização, Adaptabilidade, Comunicação, Resolução de Problemas.</p>
+            <h3 class="card-title">Soft Skills</h3>
+            <p class="card-text">Organização, Adaptabilidade, Comunicação, Resolução de Problemas.</p>
           </div>
           </div>
         </div>
        </section>
 
       <!-- Projects Section -->
-       <section id="projects">
-        <div class="projects-container">
-          <h2 class="projects-title">Projetos</h2>
-          <div class="projects-cards-container">
+       <section id="projects" class="projects-section">
+        <div class="projects-container container">
+          <h2 class="section-title">Projetos</h2>
+          <div class="projects-cards-grid">
             <!--Placeholder para projetos-->
             <div class="projects-card">
-              <h3 class="projects-subtitle">Projeto 1</h3>
-              <p class="projects-text">Breve descrição do projeto. Fale sobre o objetivo, o que ele faz e quais tecnologias usou.</p>
-              <a href="#"></a>
+              <h3 class="projects-title">Projeto 1</h3>
+              <p class="projects-description">Breve descrição do projeto. Fale sobre o objetivo, o que ele faz e quais tecnologias usou.</p>
+              <a href="#" class="project-link">Ver no GitHub</a>
             </div>
              <div class="projects-card">
-              <h3 class="projects-subtitle">Projeto 2</h3>
-              <p class="projects-text">Breve descrição do projeto. Fale sobre o objetivo, o que ele faz e quais tecnologias usou.</p>
-              <a href="#"></a>
+              <h3 class="projects-title">Projeto 2</h3>
+              <p class="projects-description">Breve descrição do projeto. Fale sobre o objetivo, o que ele faz e quais tecnologias usou.</p>
+              <a href="#" class="project-link">Ver no GitHub</a>
             </div>
           </div>
-          <div class="see-all-projects">
+          <div class="view-all-projects">
             <a href="https://github.com/KarenOnog" target="_blank" rel="">Ver todos os projetos no GitHub</a>
           </div>
+          </div>
+        </section>
 
           <!--Contact Section-->
-          <section class="contact">
-            <h2 class="contact-title">Contato</h2>
-            <div class="contact-container">
+          <section id="contact" class="contact-section">
+            <div class="contact-container container">
+            <h2 class="section-title">Contato</h2>
               <p class="contact-text">Interessado em saber mais sobre meu trabalho? Entre em contato!</p>
-              <a href="malito:karen0nogueira@gmail.com">Enviar e-mail</a>
+              <a href="malito:karen0nogueira@gmail.com" class="contact-email">Enviar e-mail</a>
             </div>
-          </section>
+            </section>
         </div>
-       </section>
+        
        
      </main>
-     <footer class="footer">Desenvolvido por Karen Nogueira</footer>
+     <footer>
+      <p class="footer-text">Desenvolvido por Karen Nogueira></p>
+     </footer>
 
     <script src="js/script.js"></script>
   </body>
