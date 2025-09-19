@@ -21,18 +21,18 @@
      <header>
       <div class="header-container container">
         <h1 class="header-name">Karen Nogueira</h1>
-        <nav class="header-nav">
+        <nav class="header-nav desktop-nav">
           <a href="#about" class="nav-link">Sobre Mim</a>
           <a href="#skills"class="nav-link">Habilidades</a>
           <a href="#projects" class="nav-link">Projetos</a>
           <a href="#contact" class="nav-link">Contato</a>
         </nav>
-        <button id="menu-button">
+        <button id="menu-button" class="mobile-menu-button">
           <svg class="menu-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
           
-          <!-- adicionar icone de menu svg-->
+        
         </button>
       </div>
       <div id="mobile-menu" class="mobile-nav">
@@ -56,16 +56,16 @@ Após anos de experiência na área da moda, desenvolvi um olhar criativo e aten
 Estou pronta para agregar valor à sua equipe, contribuir em projetos de desenvolvimento Front-end   e crescer profissionalmente como Desenvolvedora Web. Se procura alguém comprometida, com vontade de aprender e evoluir, vamos conversar!
           </p>
           <div class="social-links">
-            <a href="https://github.com/KarenOnog" target="_blank" rel="">GitHub</a>
-            <a href="https://www.linkedin.com/in/karenOnogueira" target="_blank" rel="">Linkedin</a>
+            <a href="https://github.com/KarenOnog" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/karenOnogueira" target="_blank" rel="noopener noreferrer">Linkedin</a>
           </div>
         </div>
       </section>
 
       <!-- Skills Section -->
        <section id="skills" class="skills-section">
-        <div class="container text-center">
-          <h2 class="section-title">Habilidades</h2>
+        <div class="container">
+          <h2 class="section-title text-center">Habilidades</h2>
           <div class="grid-container">
           <div class="card">
             <h3 class="card-title">Front-end</h3>
@@ -89,8 +89,8 @@ Estou pronta para agregar valor à sua equipe, contribuir em projetos de desenvo
 
       <!-- Projects Section -->
        <section id="projects" class="projects-section">
-        <div class="container text-center">
-          <h2 class="section-title">Projetos</h2>
+        <div class="container">
+          <h2 class="section-title text-center">Projetos</h2>
           <div class="grid-container">
             <!--Placeholder para projetos-->
             <div class="card">
@@ -105,17 +105,17 @@ Estou pronta para agregar valor à sua equipe, contribuir em projetos de desenvo
             </div>
           </div>
           <div class="all-projects-link">
-            <a href="https://github.com/KarenOnog" target="_blank" rel="">Ver todos os projetos no GitHub</a>
+            <a href="https://github.com/KarenOnog" target="_blank" rel="noopener noreferrer">Ver todos os projetos no GitHub</a>
           </div>
           </div>
         </section>
 
           <!--Contact Section-->
           <section id="contact" class="contact-section">
-            <div class="contact-container container">
+            <div class="container text-center">
             <h2 class="section-title">Contato</h2>
               <p class="contact-text">Interessado em saber mais sobre meu trabalho? Entre em contato!</p>
-              <a href="malito:karen0nogueira@gmail.com" class="contact-email">Enviar e-mail</a>
+              <a href="mailto:karen0nogueira@gmail.com" class="contact-email">Enviar e-mail</a>
             </div>
             </section>
         </div>
@@ -123,7 +123,9 @@ Estou pronta para agregar valor à sua equipe, contribuir em projetos de desenvo
        
      </main>
      <footer>
-      <p class="footer-text">Desenvolvido por Karen Nogueira</p>
+      <div class="container">
+        <p class="footer-text">&copy; 2024 Karen Nogueira. Todos os direitos reservados.</p>
+      </div>
      </footer>
 
     <script src="js/script.js"></script>
