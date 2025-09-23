@@ -77,10 +77,13 @@ header {
   font-weight: 500;
   transition: color 0.3s ease;
   padding: 8px 16px;
+  
 }
 
 .nav-link:hover {
   color: var(--light-accent);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px #0000004d;
 }
 
 .nav-link-contact {
@@ -199,11 +202,12 @@ main {
 /* Hero Section */
 
 .hero-section {
-  padding: 40px;
-  border: 1px solid red;
+  padding: 40px 0;
+  border-bottom: 1px solid var(--light-border);
 }
 
 .hero-content {
+  width: 90%;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -226,7 +230,8 @@ main {
   line-height: 1.5;
 }
 
-.hero-subtitle {
+.hero-text {
+  font-size: 0.9rem;
 }
 
 /* Skills Section */
@@ -265,6 +270,7 @@ main {
 /* Grid for Skills and Projects */
 
 .grid-container {
+  width: 90;
   display: grid;
   grid-template-columns: 1fr;
   gap: 32px;
@@ -371,7 +377,7 @@ footer {
   }
 
   .mobile-nav {
-    display: none;
+    display: flex;
     flex-direction: column;
     text-align: center;
     gap: 12px;
