@@ -1,72 +1,98 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfólio Karen Nogueira</title>
-    
-    <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
-    rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
 
-  <body>
-    
-    <!-- Header and Navigation -->
-     <header>
-      <div class="header-container container">
-        <h1 class="header-name">Karen Nogueira</h1>
-        <nav class="header-nav desktop-nav">
-          <a href="#about" class="nav-link">Sobre Mim</a>
-          <a href="#skills" class="nav-link">Habilidades</a>
-          <a href="#projects" class="nav-link">Projetos</a>
-          <a href="#contact" class="nav-link">Contato</a>
-        </nav>
-        <button id="menu-button" class="mobile-menu-button">
-          <svg class="menu-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-          
-        
-        </button>
-      </div>
-      <div id="mobile-menu" class="mobile-nav">
-        <a href="#about" class="mobile-nav-link">Sobre Mim</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio Karen Nogueira</title>
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- Header and Navigation -->
+  <header>
+    <div class="header-container container">
+      <nav class="header-nav desktop-nav">
+        <a href="#about" class="nav-link">Sobre</a>
+        <a href="#skills" class="nav-link">Habilidades</a>
+        <a href="#projects" class="nav-link">Projetos</a>
+        <div class="menu-dropdown">
+          <button class="menu-btn">Menu</button>
+          <ul class="dropdown-content">
+            <li><a href="https://github.com/seu-usuario" target="_blank">GitHub</a></li>
+            <li><a href="https://linkedin.com/in/seu-usuario" target="_blank">LinkedIn</a></li>
+            <li><a href="#curriculo">Currículo</a></li>
+          </ul>
+        </div>
+        <a href="#contact" class="nav-link-contact">Fale Comigo!</a>
+      </nav>
+      <button id="menu-button" class="mobile-menu-button">
+        <svg class="menu-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="mobile-nav">
+        <a href="#about" class="mobile-nav-link">Sobre</a>
           <a href="#skills" class="mobile-nav-link">Habilidades</a>
           <a href="#projects" class="mobile-nav-link">Projetos</a>
-          <a href="#contact" class="mobile-nav-link">Contato</a>
+          <a href="#contact" class="mobile-nav-link-contact">Fale Comigo!</a>
       </div>
-     </header>
+  </header>
 
-     <main>
-      <!--About Section-->
-      <section id="about" class="about-section">
-        <div class="about-container container">
-          <h2 class="about-title">Sobre Mim</h2>
-          <p class="about-text">
-            Meu nome é Karen, sou Desenvolvedora Front-end em formação, apaixonada por tecnologia, programação e inovação. Busco minha primeira oportunidade de estágio em TI   para aplicar meus conhecimentos em desenvolvimento web e contribuir com projetos modernos e desafiadores.
-Tenho experiência prática com HTML, CSS, JavaScript e React, além de conhecimentos em versionamento de código com Git e metodologias ágeis. Estou dedicada ao aprendizado contínuo, sempre atualizada com as tendências do mercado, participando de cursos, bootcamps e projetos pessoais.
-Minhas principais habilidades incluem resolução de problemas, trabalho em equipe, comunicação e adaptabilidade. Sou proativa, organizada e tenho facilidade para aprender novas tecnologias e linguagens de programação.
-Após anos de experiência na área da moda, desenvolvi um olhar criativo e atenção aos detalhes, características que agora aplico no desenvolvimento de interfaces intuitivas e responsivas. Desde minha mudança para Brasília em 2022, venho me dedicando intensamente a estudos independentes e cursos especializados em desenvolvimento de software, com o objetivo de ingressar no mercado de trabalho de tecnologia.
-Estou pronta para agregar valor à sua equipe, contribuir em projetos de desenvolvimento Front-end   e crescer profissionalmente como Desenvolvedora Web. Se procura alguém comprometida, com vontade de aprender e evoluir, vamos conversar!
-          </p>
-          <div class="social-links">
-            <a href="https://github.com/KarenOnog" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a href="https://www.linkedin.com/in/karenOnogueira" target="_blank" rel="noopener noreferrer">Linkedin</a>
-          </div>
+  <main>
+    <!--About Section-->
+    <section id="hero" class="hero-section">
+      <div class="hero-content container">
+        <h1 class="hero-title">Olá, eu sou Karen Nogueira</h1>
+        <p class="hero-subtitle">Desenvolvedora Front-end e entusiasta de automação</p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn">Projetos</a>
+          <a href="#about" class="btn">Sobre Mim</a>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Skills Section -->
-       <section id="skills" class="skills-section">
-        <div class="container">
-          <h2 class="section-title text-center">Habilidades</h2>
-          <div class="grid-container">
+    <section id="about" class="about-section">
+      <div class="about-container container">
+        <h2 class="about-title">Sobre Mim</h2>
+        <p class="about-text">
+          Meu nome é Karen, sou Desenvolvedora Front-end em formação, apaixonada por tecnologia, programação e inovação.
+          Busco minha primeira oportunidade de estágio em TI para aplicar meus conhecimentos em desenvolvimento web e
+          contribuir com projetos modernos e desafiadores.
+          Tenho experiência prática com HTML, CSS, JavaScript e React, além de conhecimentos em versionamento de código
+          com Git e metodologias ágeis. Estou dedicada ao aprendizado contínuo, sempre atualizada com as tendências do
+          mercado, participando de cursos, bootcamps e projetos pessoais.
+          Minhas principais habilidades incluem resolução de problemas, trabalho em equipe, comunicação e
+          adaptabilidade. Sou proativa, organizada e tenho facilidade para aprender novas tecnologias e linguagens de
+          programação.
+          Após anos de experiência na área da moda, desenvolvi um olhar criativo e atenção aos detalhes, características
+          que agora aplico no desenvolvimento de interfaces intuitivas e responsivas. Desde minha mudança para Brasília
+          em 2022, venho me dedicando intensamente a estudos independentes e cursos especializados em desenvolvimento de
+          software, com o objetivo de ingressar no mercado de trabalho de tecnologia.
+          Estou pronta para agregar valor à sua equipe, contribuir em projetos de desenvolvimento Front-end e crescer
+          profissionalmente como Desenvolvedora Web. Se procura alguém comprometida, com vontade de aprender e evoluir,
+          vamos conversar!
+        </p>
+        <div class="social-links">
+          <a href="https://github.com/KarenOnog" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/karenOnogueira" target="_blank" rel="noopener noreferrer">Linkedin</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+      <div class="container">
+        <h2 class="section-title text-center">Habilidades</h2>
+        <div class="grid-container">
           <div class="card">
             <h3 class="card-title">Front-end</h3>
             <p class="card-text">HTML, CSS, JavaScript, responsividade, UI/UX.</p>
@@ -83,51 +109,55 @@ Estou pronta para agregar valor à sua equipe, contribuir em projetos de desenvo
             <h3 class="card-title">Soft Skills</h3>
             <p class="card-text">Organização, Adaptabilidade, Comunicação, Resolução de Problemas.</p>
           </div>
-          </div>
         </div>
-       </section>
-
-      <!-- Projects Section -->
-       <section id="projects" class="projects-section">
-        <div class="container">
-          <h2 class="section-title text-center">Projetos</h2>
-          <div class="grid-container">
-            <!--Placeholder para projetos-->
-            <div class="card">
-              <h3 class="card-title">Projeto 1</h3>
-              <p class="card-text">Breve descrição do projeto. Fale sobre o objetivo, o que ele faz e quais tecnologias usou.</p>
-              <a href="#" class="link-button">Ver no GitHub &rarr;</a>
-            </div>
-             <div class="card">
-              <h3 class="card-title">Projeto 2</h3>
-              <p class="card-text">Breve descrição do projeto. Fale sobre o objetivo, o que ele faz e quais tecnologias usou.</p>
-              <a href="#" class="link-button">Ver no GitHub &rarr;</a>
-            </div>
-          </div>
-          <div class="all-projects-link">
-            <a href="https://github.com/KarenOnog" target="_blank" rel="noopener noreferrer">Ver todos os projetos no GitHub</a>
-          </div>
-          </div>
-        </section>
-
-          <!--Contact Section-->
-          <section id="contact" class="contact-section">
-            <div class="container text-center">
-            <h2 class="section-title">Contato</h2>
-              <p class="contact-text">Interessado em saber mais sobre meu trabalho? Entre em contato!</p>
-              <a href="mailto:karen0nogueira@gmail.com" class="contact-email">Enviar e-mail</a>
-            </div>
-            </section>
-        </div>
-        
-       
-     </main>
-     <footer>
-      <div class="container">
-        <p class="footer-text">&copy; 2024 Karen Nogueira. Todos os direitos reservados.</p>
       </div>
-     </footer>
+    </section>
 
-    <script src="js/script.js"></script>
-  </body>
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <h2 class="section-title text-center">Projetos</h2>
+        <div class="grid-container">
+          <!--Placeholder para projetos-->
+          <div class="card">
+            <h3 class="card-title">Projeto 1</h3>
+            <p class="card-text">Breve descrição do projeto. Fale sobre o objetivo, o que ele faz e quais tecnologias
+              usou.</p>
+            <a href="#" class="link-button">Ver no GitHub &rarr;</a>
+          </div>
+          <div class="card">
+            <h3 class="card-title">Projeto 2</h3>
+            <p class="card-text">Breve descrição do projeto. Fale sobre o objetivo, o que ele faz e quais tecnologias
+              usou.</p>
+            <a href="#" class="link-button">Ver no GitHub &rarr;</a>
+          </div>
+        </div>
+        <div class="all-projects-link">
+          <a href="https://github.com/KarenOnog" target="_blank" rel="noopener noreferrer">Ver todos os projetos no
+            GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <!--Contact Section-->
+    <section id="contact" class="contact-section">
+      <div class="container text-center">
+        <h2 class="section-title">Contato</h2>
+        <p class="contact-text">Interessado em saber mais sobre meu trabalho? Entre em contato!</p>
+        <a href="mailto:karen0nogueira@gmail.com" class="contact-email">Enviar e-mail</a>
+      </div>
+    </section>
+    </div>
+
+
+  </main>
+  <footer>
+    <div class="container">
+      <p class="footer-text">&copy; 2024 Karen Nogueira. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
 </html>
