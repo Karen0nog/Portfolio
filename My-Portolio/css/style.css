@@ -399,16 +399,57 @@ main {
   background-color: var(--light-accent);
   color: #fff;
   transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 20px #00000033;
 }
 
 /* Contact Section */
 
+.contact-section {
+  background-color: var(--light-background);
+  padding: 20px 0;
+}
 .contact-container {
-  max-width: 600px;
+  display: flex;
+  flex-direction: column; 
+  gap: 40px;
+  max-width: 1000px;
   margin: 0 auto;
+}
+
+
+.contact-info-container {
   text-align: center;
-  padding: 0 16px;
+}
+
+.contact-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--light-text-primary);
+  margin-bottom: 20px;
+}
+
+.contact-text {
+  font-size: 1rem;
+  color: var(--light-text-secondary);
+  margin-bottom: 15px;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  gap: 10px;
+  font-size: 1rem;
+}
+
+.contact-item i {
+  color: var(--light-accent);
 }
 
 /* Footer */
@@ -518,6 +559,7 @@ footer {
     grid-template-columns: repeat(4, 1fr);
     gap: 16px;
   }
+  
 }
 
 /* Large Screens */
