@@ -1,345 +1,185 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-    rel="shortcut icon"
-    href="./assets/img/avatar_karen.png"
-    type="image/x-icon"
-    />
-    <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
-    rel="stylesheet"
-    />
-   
-    <link rel="stylesheet" href="css/style.css" />
-    <script src="js/script.js"></script>
-    <!-- ICONS -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
 
-    <title>Portfólio Karen Nogueira</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio Karen Nogueira</title>
 
-  <body>
-    <div class="layout-container">
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
-      <!--SIDE BAR-->
-      <aside
-        class="sidebar" data-sidebar
-      >
-        <div class="sidebar-info">
-          <figure class="avatar-box">
-            <img
-              src="./assets/img/avatar_karen.png"
-              alt="Karen Nogueira avatar"
-              width="80"
-            />
-          </figure>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
 
-          <div class="info-content">
-            <h1 class="name" title="Karen Nogueira">Karen Nogueira</h1>
-            <p class="title">Web Developer</p>
-            <p class="description">
-              Desenvolvedora Front-end em formação, apaixonada por tecnologia e inovação. Buscando minha primeira oportunidade de estágio em TI.
+<body>
+
+  <!-- Header and Navigation -->
+  <header>
+    <div class="header-container container">
+      <nav class="header-nav desktop-nav">
+        <a href="#about" class="nav-link">Sobre</a>
+        <a href="#skills" class="nav-link">Habilidades</a>
+        <a href="#projects" class="nav-link">Projetos</a>
+        <div class="menu-dropdown">
+          <button class="menu-btn" id="menu-btn">Menu</button>
+          <ul class="dropdown-content">
+            <li><a href="https://github.com/Karen0nog" target="_blank">GitHub</a></li>
+            <li><a href="https://linkedin.com/in/karen0nogueira/" target="_blank">Linkedin</a></li>
+            <li><a href="#curriculo">Currículo</a></li>
+          </ul>
+        </div>
+        <a href="#contact" class="nav-link-contact">Fale Comigo!</a>
+      </nav>
+      <button id="mobile-menu-button" class="mobile-menu-button">
+        <svg class="menu-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="mobile-nav">
+      <a href="#about" class="mobile-nav-link">Sobre</a>
+      <a href="#skills" class="mobile-nav-link">Habilidades</a>
+      <a href="#projects" class="mobile-nav-link">Projetos</a>
+      <a href="#contact" class="mobile-nav-link-contact">Fale Comigo!</a>
+    </div>
+  </header>
+
+  <main>
+    <!--About Section-->
+    <section id="hero" class="hero-section">
+      <div class="hero-content container">
+        <div class="hero-tagline">
+          <h3 class="hero-title">Desenvolvedora Front-end</h3>
+          <h1 class="hero-subtitle">Olá, eu sou Karen Nogueira</h1>
+        </div>
+        <div class="hero-description">
+          <p class="hero-text">Bem-vindo(a) ao meu portfólio de tecnologia! Minha jornada como desenvolvedora
+            front-end está apenas começando, e estou entusiasmada para o que vem por aí. Com paixão por programação e
+            inovação, convido você a explorar meus projetos e a ver como minhas habilidades podem agregar valor em um
+            time. Vem comigo!</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about-section">
+      <div class="about-container container">
+        <div class="about-image">
+          <img src="assets/img/avatar(2).png" alt="Foto de Perfil Karen Nogueira" />
+        </div>
+        <div class="about-container-wrapper">
+          <h3 class="about-subtitle-tag">Sobre Mim</h3>
+          <h2 class="about-title">Minha jornada: da Moda para o Código</h2>
+          <p class="about-text">
+            Minha história é uma jornada de transformação: após anos de dedicação à moda, redirecionei minha carreira
+            para a tecnologia com um único objetivo: inovar. Sou uma desenvolvedora Front-end em formação, apaixonada
+            por programação e inovação, e busco minha primeira oportunidade de estágio em TI para aplicar meus
+            conhecimentos em desenvolvimento web e contribuir com projetos modernos e desafiadores.
+
+            Tenho experiência prática com HTML, CSS, JavaScript e React, além de conhecimentos em Git e metodologias
+            ágeis. Minhas principais habilidades incluem resolução de problemas, trabalho em equipe e comunicação, e
+            tenho facilidade para aprender novas tecnologias. Minha sólida bagagem em gestão e organização de processos,
+            adquirida na área da moda, me permite criar interfaces de usuário intuitivas e otimizar fluxos de trabalho.
+
+            Estou pronta para agregar valor à sua equipe, contribuir em projetos de desenvolvimento e crescer
+            profissionalmente. Se você procura alguém comprometida, proativa e com vontade de aprender, vamos conversar!
+          </p>
+          <div class="social-links">
+            <a href="https://github.com/Karen0nog" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://linkedin.com/in/karen0nogueira/" target="_blank" rel="noopener noreferrer">Linkedin</a>
           </div>
         </div>
-      </aside>
+      </div>
+    </section>
 
-      <div class="main-content">
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+      <div class="skills-container container">
+        <h2 class="section-title text-center">Habilidades</h2>
+        <div class="grid-container">
+          <div class="card">
+            <h3 class="card-title">Front-end</h3>
+            <p class="card-text">HTML, CSS, JavaScript, responsividade, UI/UX.</p>
+          </div>
+          <div class="card">
+            <h3 class="card-title">Back-end (Básico)</h3>
+            <p class="card-text">Conhecimento em lógica de programação e Python.</p>
+          </div>
+          <div class="card">
+            <h3 class="card-title">Ferramentas</h3>
+            <p class="card-text">Git e GitHub, metodologias ágeis (Agile, DevOps).</p>
+          </div>
+          <div class="card">
+            <h3 class="card-title">Soft Skills</h3>
+            <p class="card-text">Organização, Adaptabilidade, Comunicação, Resolução de Problemas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <!-- NAVBAR -->
-        <nav class="navbar">
-          <ul class="navbar-list">
-            <li class="navbar-item">
-              <button class="navbar-link active" data-nav-link>Sobre</button>
-            </li>
-            <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Currículo</button>
-            </li>
-            <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Portfólio</button>
-            </li>
-            <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Contato</button>
-            </li>
-          </ul>
-        </nav>
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <h2 class="section-title text-center">Projetos</h2>
+        <div class="grid-container">
+          <!--Placeholder para projetos-->
+          <div class="card">
+            <h3 class="card-title">Projeto 1</h3>
+            <p class="card-text">Breve descrição do projeto. Fale sobre o objetivo, o que ele faz e quais tecnologias
+              usou.</p>
+            <a href="#" class="link-button">Ver no GitHub &rarr;</a>
+          </div>
+          <div class="card">
+            <h3 class="card-title">Projeto 2</h3>
+            <p class="card-text">Breve descrição do projeto. Fale sobre o objetivo, o que ele faz e quais tecnologias
+              usou.</p>
+            <a href="#" class="link-button">Ver no GitHub &rarr;</a>
+          </div>
+        </div>
+        <div class="all-projects-link">
+          <a href="https://github.com/Karen0nog" target="_blank" rel="noopener noreferrer">Ver todos os projetos no
+            GitHub</a>
+        </div>
+      </div>
+    </section>
 
-        <!-- ABOUT -->
-        <article class="about active" data-page="about">
-          <header>
-            <h2 class="h2 article-title">Sobre mim</h2>
-          </header>
+    <!--Contact Section-->
+    <section id="contact" class="contact-section">
+      <div class="contact-container container">
+        <div class="contact-info-container">
+          <h2 class="contact-title">Vamos conversar e criar algo incrível juntos!</h2>
+          <p class="contact-text">Estou aberta a oportunidades de estágio e projetos colaborativos. Se você está
+            procurando uma desenvolvedora front-end dedicada e apaixonada, adoraria ouvir de você!</p>
 
-          <section class="about active">
-            <h3>Minha Jornada na Tecnologia como Desenvolvedora Front-end</h3>
-            <br />
-            <p>
-              Sou <strong>Desenvolvedora Front-end</strong> em formação,
-              apaixonada por <strong>tecnologia</strong>,
-              <strong>programação</strong> e inovação. Busco minha primeira
-              oportunidade de <strong>estágio em TI</strong> para aplicar meus
-              conhecimentos em <strong>desenvolvimento web</strong> e contribuir
-              com projetos modernos e desafiadores.<br /><br />
-
-              Tenho experiência prática com <strong>HTML</strong>,
-              <strong>CSS</strong>, <strong>JavaScript</strong> e
-              <strong>React</strong>, além de conhecimentos em
-              <strong>versionamento de código com Git</strong> e
-              <strong>metodologias ágeis</strong>. Estou dedicada ao aprendizado contínuo, 
-              sempre atualizada com as tendências do mercado, participando de cursos, bootcamps 
-              e projetos pessoais.<br /><br />
-
-              Minhas principais habilidades incluem
-              <strong>resolução de problemas</strong>,
-              <strong>trabalho em equipe</strong>,
-              <strong>comunicação</strong> e <strong>adaptabilidade</strong>.
-              Sou proativa, organizada e tenho facilidade para aprender novas
-              tecnologias e linguagens de programação.<br /><br />
-
-              Após anos de experiência na área da moda, desenvolvi um olhar
-              criativo e atenção aos detalhes, características que agora aplico
-              no desenvolvimento de interfaces intuitivas e responsivas. Desde
-              minha mudança para Brasília em 2022, venho me dedicando
-              intensamente a estudos independentes e cursos especializados em
-              <strong>desenvolvimento de software</strong>, com o objetivo de
-              ingressar no mercado de trabalho de tecnologia.<br /><br />
-
-              Estou pronta para agregar valor à sua equipe, contribuir em
-              projetos de <strong>desenvolvimento Front-end</strong> e crescer
-              profissionalmente como <strong>Desenvolvedora Web</strong>. Se
-              procura alguém comprometida, com vontade de aprender e evoluir,
-              vamos conversar!
+          <div class="contact-details">
+            <p class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:karen0nogueira@gmail.com" class="contact-link">karen0nogueira@gmail.com</a>
             </p>
-          </section>
-
-          <!-- service -->
-          <section class="service">
-            <h3 class="h3 service-title">O que estou fazendo</h3>
-            <ul class="service-list">
-              <li class="service-item">
-                <div class="service-icon-box">
-                  <img
-                    src="./assets/coding-icon.svg"
-                    alt="Web Development icon"
-                    width="40"
-                  />
-                </div>
-                <div class="service-content-box">
-                  <h4 class="h4 service-item-title">Web Development</h4>
-                  <p class="service-item-text">
-                    Desenvolvimento de sites de alta qualidade.
-                  </p>
-                </div>
-              </li>
-            </ul>
-          </section>
-        </article>
-
-        <!-- RESUME -->
-        <article class="resume" data-page="resume">
-          <header>
-            <h2 class="h2 article-title">Currículo</h2>
-          </header>
-
-          <section class="timeline">
-            <div class="title-wrapper">
-              <div class="icon-box">
-                <ion-icon name="book-outline"></ion-icon>
-              </div>
-              <h3 class="h3">Educação</h3>
-            </div>
-
-            <ol class="timeline-list">
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">
-                  Faculdade de Tecnologia e Inovação Senac DF
-                </h4>
-                <span>2024 - 2026</span>
-                <p class="timeline-text">
-                  Graduação em Análise e Desenvolvimento de Sistemas
-                </p>
-              </li>
-
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">
-                  Escola Senai Francisco Matarazzo
-                </h4>
-                <span>2015 - 2016</span>
-                <p class="timeline-text">Pós-Graduação em Design de Moda</p>
-              </li>
-
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Universidade Paulista</h4>
-                <span>2010 - 2012</span>
-                <p class="timeline-text">Graduação em Design de Moda</p>
-              </li>
-            </ol>
-          </section>
-
-          <section class="timeline">
-            <div class="title-wrapper d-flex align-items-center mb-3">
-              <div class="icon-box me-2">
-                <ion-icon name="book-outline"></ion-icon>
-              </div>
-              <h3 class="h3 mb-0">Experiências</h3>
-            </div>
-
-            <ol class="timeline-list">
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Costureira</h4>
-                <span>2014 - 2020</span>
-                <p class="timeline-text">
-                  Rotina administrativa, atendimento ao cliente e costureira de
-                  ajustes e reformas. Trabalho em equipe, pontualidade,
-                  proatividade , comunicação e resolução de problemas.
-                </p>
-              </li>
-            </ol>
-          </section>
-
-          <section class="skill">
-            <h3 class="h3 skills-title">Habilidades</h3>
-
-            <ul class="skills-list content-card">
-              <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5">HTML</h5>
-                  <data value="50">50%</data>
-                </div>
-                <div class="skills-progress-bg">
-                  <div
-                    class="skills-progress-fill"
-                    style="width: 80%"
-                  ></div>
-                </div>
-              </li>
-
-              <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5">CSS</h5>
-                  <data value="50">50%</data>
-                </div>
-                <div class="skills-progress-bg">
-                  <div
-                    class="skills-progress-fill bg-primary"
-                    style="width: 80%"
-                  ></div>
-                </div>
-              </li>
-
-              <li class="skills-item">
-                <div class="title-wrapper d-flex justify-content-between">
-                  <h5 class="h5">JavaScript</h5>
-                  <data value="50">50%</data>
-                </div>
-                <div class="skills-progress-bg">
-                  <div
-                    class="skills-progress-fill bg-primary"
-                    style="width: 80%"
-                  ></div>
-                </div>
-              </li>
-
-              <li class="skills-item">
-                <div class="title-wrapper">
-                  <h5 class="h5">React</h5>
-                  <data value="50">50%</data>
-                </div>
-                <div class="skills-progress-bg">
-                  <div
-                    class="skills-progress-fill bg-primary"
-                    style="width: 80%"
-                  ></div>
-                </div>
-              </li>
-            </ul>
-          </section>
-
-          <!-- PORTFOLIO -->
-        </article>
-
-        <!-- PORTFÓLIO -->
-        <article class="portfolio" data-page="portfolio">
-          <header>
-            <h2 class="h2 article-title">Portfólio</h2>
-          </header>
-          <!--Projetos aqui-->
-        </article>
-                <!-- CONTATO -->
-        <article class="contact" data-page="contact">
-          <header>
-            <h2 class="h2 article-title">Contato</h2>
-          </header>
-
-          <section class="contact-info">
-            <ul class="contacts-list">
-              <li class="contact-item">
-                <div class="icon-box">
-                  <ion-icon name="mail-outline"></ion-icon>
-                </div>
-
-                <div>
-                  <p class="contact-title">E-mail</p>
-                  <a href="mailto:karen0nogueira@gmail.com" class="contact-link"
-                    >karen0nogueira@gmail.com</a
-                  >
-                </div>
-              </li>
-              <li class="contact-item">
-                <div class="icon-box">
-                  <ion-icon name="phone-portrait-outline"></ion-icon>
-                </div>
-
-                <div>
-                  <p class="contact-title">Telefone</p>
-                  <a href="tel:+5561995903165" class="contact-link"
-                    >(61) 99590-3165</a
-                  >
-                </div>
-              </li>
-
-              <li class="contact-item">
-                <div class="icon-box">
-                  <ion-icon name="location-outline"></ion-icon>
-                </div>
-                <div>
-                  <p class="contact-title">Localização</p>
-                  <address>São Paulo, SP, Brazil</address>
-                </div>
-              </li>
-            </ul>
-          </section>
-
-          <section class="social-section">
-            <h3 class="h3">Redes Sociais</h3>
-            <ul class="social-list">
-              <li class="social-item">
-                <a
-                  href="https://www.linkedin.com/in/karen0nogueira/"
-                  class="social-link"
-                >
-                  <ion-icon name="logo-linkedin"></ion-icon>
-                </a>
-              </li>
-            </ul>
-          </section>
-        </article>
-        
+            <p class="contact-item">
+              <i class="fas fa-phone"></i>
+              <a href="tel:+5511999999999" class="contact-link">+55 11 94477-7998</a>
+            </p>
+            <p class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span class="contact-link">São Paulo, Brasil</span>
+            </p>
+          </div>
+        </div>
       </div>
-      </div>
-   
+    </section>
+
+  </main>
+  <footer>
+    <div class="container">
+      <p class="footer-text">&copy; 2024 Karen Nogueira. Todos os direitos reservados.</p>
     </div>
-  </body>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
 </html>

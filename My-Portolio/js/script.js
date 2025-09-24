@@ -1,47 +1,36 @@
-// Espera o HTML carregar completamente
-document.addEventListener('DOMContentLoaded', function() {
-    
-    // Pega todos os botões da navbar
-    const navButtons = document.querySelectorAll('.navbar-link');
-    
-    // Pega todas as seções (páginas)
-    const sections = document.querySelectorAll('[data-page]');
-    
-    // Adiciona evento de clique para cada botão
-    navButtons.forEach(function(button) {
-        button.addEventListener('click', function() {
-            
-            // Remove 'active' de todos os botões
-            navButtons.forEach(function(btn) {
-                btn.classList.remove('active');
-            });
-            
-            // Remove 'active' de todas as seções
-            sections.forEach(function(section) {
-                section.classList.remove('active');
-            });
-            
-            // Adiciona 'active' no botão clicado
-            this.classList.add('active');
-            
-            // Descobre qual seção mostrar
-            const buttonText = this.textContent.toLowerCase();
-            let targetSection = '';
-            
-            if (buttonText === 'sobre') {
-                targetSection = 'about';
-            } else if (buttonText === 'currículo') {
-                targetSection = 'resume';
-            } else if (buttonText === 'portfólio') {
-                targetSection = 'portfolio';
-            } else if (buttonText === 'contato') {
-                targetSection = 'contact';
+document.addEventListener('DOMContentLoaded', () => {
+
+    const mobileMenuButton = document.querySelector('#mobile-menu-button');
+    const mobileMenu = document.querySelector('#mobile-menu');
+
+    if (mobileMenuButton && mobileMenu) {
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('show-mobile-menu');
+        });
+    }
+
+    const menuBtn = document.querySelector('#menu-btn');
+    const dropdownContent = document.querySelector('.dropdown-content');
+
+    if(menuBtn && dropdownContent) {
+        menuBtn.addEventListener('click',(event) => {
+            event.stopPropagation();
+            dropdownContent.classList.toggle('show');
+        });
+
+        document.addEventListener('click', (event) => {
+            if(!menuBtn.contains(event.target) && !dropdownContent.contains(event.target)) {
+                dropdownContent.classList.remove('show');
             }
-            
-            // Mostra a seção correspondente
-            const sectionToShow = document.querySelector(`[data-page="${targetSection}"]`);
-            if (sectionToShow) {
-                sectionToShow.classList.add('active');
+        });
+    }
+
+    const mobileNavLinks = document.querySelectorAll('.mobile-nav-link, .mobile-nav-link-contact');
+
+    mobileNavLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (mobileMenu) {
+                mobileMenu.classList.remove('show-mobile-menu');
             }
         });
     });
