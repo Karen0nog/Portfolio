@@ -15,12 +15,12 @@ Este portfólio foi desenvolvido com o objetivo de apresentar minhas habilidades
 
 [![My Skills](https://skillicons.dev/icons?i=html,css,javascript)](https://skillicons.dev)
 
-O portfólio é composto por [Mencione as principais seções do seu portfólio, por exemplo]:
+O portfólio é composto por:
 
 * **Página Inicial (Home):** 
 * **Projetos:** 
 * **Sobre Mim:** 
-* **Contato:** https://www.linkedin.com/in/karen0nogueira
+* **Contato:** 
 
 ## Projetos
 
