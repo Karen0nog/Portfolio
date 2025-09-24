@@ -29,7 +29,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     mobileNavLinks.forEach(link => {
         link.addEventListener('click', () => {
-            mobileMenu.classList.remove('show-mobile-menu');
+            if (mobileMenu) {
+                mobileMenu.classList.remove('show-mobile-menu');
+            }
         });
     });
 });
