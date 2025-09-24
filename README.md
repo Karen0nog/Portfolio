@@ -26,21 +26,21 @@ O portfólio é composto por [Mencione as principais seções do seu portfólio,
 
 Aqui você encontrará alguns dos projetos que desenvolvi para praticar e aprimorar minhas habilidades. Para cada projeto, você poderá encontrar:
 
-### Projeto 1: Página de Login
+### Projeto 1: 
 
-* **Nome do Projeto:** Um título claro e conciso.
-* **Breve Descrição:** Uma pequena explicação sobre o objetivo e as funcionalidades do projeto.
-* **Tecnologias Utilizadas:** As tecnologias específicas que foram usadas neste projeto (pode ser um subconjunto de HTML, CSS e JavaScript, ou outras que você venha a usar).
-* **Link para Visualização (Opcional):** Se o projeto estiver hospedado online, adicione um link para que as pessoas possam visualizá-lo.
-* **Link para o Código Fonte (Opcional):** Se o código do projeto estiver em um repositório público (como este!), você pode adicionar um link para ele.
+* **Nome do Projeto:** 
+* **Breve Descrição:** 
+* **Tecnologias Utilizadas:** 
+* **Link para Visualização (Opcional):** 
+* **Link para o Código Fonte (Opcional):** 
 
-### Projeto 2: Formulário
+### Projeto 2: 
 
-* **Nome do Projeto:** Um título claro e conciso.
-* **Breve Descrição:** Uma pequena explicação sobre o objetivo e as funcionalidades do projeto.
-* **Tecnologias Utilizadas:** As tecnologias específicas que foram usadas neste projeto (pode ser um subconjunto de HTML, CSS e JavaScript, ou outras que você venha a usar).
-* **Link para Visualização (Opcional):** Se o projeto estiver hospedado online, adicione um link para que as pessoas possam visualizá-lo.
-* **Link para o Código Fonte (Opcional):** Se o código do projeto estiver em um repositório público (como este!), você pode adicionar um link para ele.
+* **Nome do Projeto:** 
+* **Breve Descrição:** 
+* **Tecnologias Utilizadas:** 
+* **Link para Visualização (Opcional):** 
+* **Link para o Código Fonte (Opcional):** 
 
 ## Como Visualizar o Portfólio
 
