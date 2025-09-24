@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    const mobileMenuButton = document.querySelector('#menu-button');
+    const mobileMenuButton = document.querySelector('#mobile-menu-button');
     const mobileMenu = document.querySelector('#mobile-menu');
 
     if (mobileMenuButton && mobileMenu) {
@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    const menuBtn = document.querySelector('.menu-btn');
+    const menuBtn = document.querySelector('#menu-btn');
     const dropdownContent = document.querySelector('.dropdown-content');
 
     if(menuBtn && dropdownContent) {

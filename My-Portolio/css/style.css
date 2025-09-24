@@ -75,7 +75,7 @@ header {
   color: var(--light-text-primary);
   text-decoration: none;
   font-weight: 500;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
   padding: 8px 16px;
 }
 
@@ -92,7 +92,8 @@ header {
   font-weight: 500;
   text-decoration: none;
   color: var(--light-accent);
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .nav-link-contact:hover {
@@ -136,7 +137,6 @@ header {
   padding: 8px 0;
   border-radius: 4px;
   list-style-type: none;
-  padding: 0;
 }
 
 .dropdown-content a {
@@ -192,12 +192,6 @@ header {
 }
 
 /* Sections */
-
-main {
-  padding: 96px auto;
-}
-
-/* Hero Section */
 
 .hero-section {
   padding: 40px 0;
@@ -410,12 +404,11 @@ main {
 }
 .contact-container {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   gap: 40px;
   max-width: 1000px;
   margin: 0 auto;
 }
-
 
 .contact-info-container {
   text-align: center;
@@ -443,7 +436,7 @@ main {
 .contact-item {
   display: flex;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
   gap: 10px;
   font-size: 1rem;
 }
@@ -487,7 +480,6 @@ footer {
   }
 
   .mobile-nav {
-    display: flex;
     flex-direction: column;
     text-align: center;
     gap: 12px;
@@ -517,12 +509,15 @@ footer {
   .mobile-nav {
     display: none !important;
   }
+
   .desktop-nav {
     display: flex;
   }
+
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .hero-content {
     flex-direction: row;
     justify-content: space-between;
@@ -533,6 +528,7 @@ footer {
     max-width: 50%;
     padding-left: 20px;
   }
+
   .about-container {
     flex-direction: row;
     justify-content: space-between;
@@ -552,20 +548,30 @@ footer {
   .social-links {
     justify-content: flex-start;
   }
+
   .projects-section .grid-container {
     grid-template-columns: repeat(3, 1fr);
   }
+
   .skills-section .grid-container {
     grid-template-columns: repeat(4, 1fr);
     gap: 16px;
   }
-  
 }
 
 /* Large Screens */
 
 @media (min-width: 1024px) {
   .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
+
+  .skills-section .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .projects-section .grid-container {
     grid-template-columns: repeat(3, 1fr);
   }
 }
