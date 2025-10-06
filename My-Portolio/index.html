@@ -18,68 +18,73 @@
 </head>
 
 <body>
+  <div class="page-content-wrapper">
+    <!-- Sidebar -->
 
-  <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-content">
+        <div class="profile-section">
+          <div class="profile-image">
+            <img src="assets/img/Karen_gemini(2).png" alt="Foto de Perfil Karen Nogueira" />
+          </div>
 
-  <aside class="sidebar">
-    <div class="sidebar-content">
-      <div class="profile-section">
-        <div class="profile-image">
-          <img src="assets/img/Karen_gemini(2).png" alt="Foto de Perfil Karen Nogueira" />
+          <nav class="sidebar-nav">
+            <a href="#about" class="nav-link">Sobre</a>
+            <a href="#skills" class="nav-link">Habilidades</a>
+            <a href="#projects" class="nav-link">Projetos</a>
+
+            <div class="contact-button-wrapper">
+              <i class="fab fa-whatsapp whatsapp-icon"></i>
+              <a href="https://wa.me/5511944777998" class="nav-link-contact" target="_blank"
+                aria-label="Fale Comigo pelo WhatsApp">Fale Comigo!</a>
+            </div>
+          </nav>
         </div>
-
-        <nav class="sidebar-nav">
-          <a href="#about" class="nav-link">Sobre</a>
-          <a href="#skills" class="nav-link">Habilidades</a>
-          <a href="#projects" class="nav-link">Projetos</a>
-
-          <i class="fab fa-whatsapp"></i>
-          <a href="https://wa.me/5511944777998" class="nav-link-contact" target="_blank">Fale Comigo!</a>
-        </nav>
-
-        <div class="contact-info">
+        <section class="contact-info">
           <h3 class="contact-title">Contato</h3>
-          <div class="contact-item">
-            <i class="fas fa-envelope"></i>
-            <a href="mailto:karen0nogueira@gmail.com">karen0nogueira@gmail.com</a>
+          <div class="contact-list">
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:karen0nogueira@gmail.com">karen0nogueira@gmail.com</a>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>São Paulo, Brasil</span>
+            </div>
           </div>
           <div class="contact-item">
-            <i class="fas fa-map-marker-alt"></i>
-            <span>São Paulo, Brasil</span>
+            <i class="fab fa-github"></i> GitHub
+            <a href="https://github.com/Karen0nog" target="_blank"></a>
           </div>
-          <div class="social-links">
-            <a href="https://github.com/Karen0nog" target="_blank">
-              <i class="fab fa-github"></i> GitHub
-            </a>
-            <a href="https://linkedin.com/in/karen0nogueira/" target="_blank">
-              <i class="fab fa-linkedin"></i> Linkedin
-            </a>
+          <div class="contact-item">
+            <i class="fab fa-linkedin"></i> Linkedin
+            <a href="https://linkedin.com/in/karen0nogueira/" target="_blank"></a>
+          </div>
+        </section>
+    </aside>
+
+    <!-- Main Content -->
+
+    <main class="main-content portfolio-content">
+
+      <!-- About Section -->
+
+      <section id="hero" class="hero-section">
+        <div class="hero-content container">
+          <div class="hero-tagline">
+            <h3 class="hero-title">Desenvolvedora Front-end</h3>
+            <h1 class="hero-subtitle">Olá, eu sou Karen Nogueira</h1>
+          </div>
+          <div class="hero-description">
+            <p class="hero-text">Bem-vindo(a) ao meu portfólio de tecnologia! Minha jornada como desenvolvedora
+              front-end está apenas começando, e estou entusiasmada para o que vem por aí. Com paixão por programação e
+              inovação, convido você a explorar meus projetos e a ver como minhas habilidades podem agregar valor em um
+              time. Vem comigo!</p>
           </div>
         </div>
-  </aside>
+      </section>
 
-  <!-- Main Content -->
-
-  <main class="main-content">
-
-    <!-- About Section -->
-
-    <section id="hero" class="hero-section">
-      <div class="hero-content container">
-        <div class="hero-tagline">
-          <h3 class="hero-title">Desenvolvedora Front-end</h3>
-          <h1 class="hero-subtitle">Olá, eu sou Karen Nogueira</h1>
-        </div>
-        <div class="hero-description">
-          <p class="hero-text">Bem-vindo(a) ao meu portfólio de tecnologia! Minha jornada como desenvolvedora
-            front-end está apenas começando, e estou entusiasmada para o que vem por aí. Com paixão por programação e
-            inovação, convido você a explorar meus projetos e a ver como minhas habilidades podem agregar valor em um
-            time. Vem comigo!</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- <section id="about" class="about-section">
+      <!-- <section id="about" class="about-section">
       <div class="about-container container">
         <div class="about-image">
           <img src="assets/img/avatar(2).png" alt="Foto de Perfil Karen Nogueira" />
@@ -109,73 +114,62 @@
       </div>
     </section> -->
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills-section">
-      <div class="skills-container container">
-        <h2 class="section-title text-center">Habilidades</h2>
-        <div class="grid-container">
-          <div class="card">
-            <h3 class="card-title">Front-end</h3>
-            <p class="card-text">HTML, CSS, JavaScript, responsividade, UI/UX.</p>
-          </div>
-          <div class="card">
-            <h3 class="card-title">Back-end (Básico)</h3>
-            <p class="card-text">Conhecimento em lógica de programação e Python.</p>
-          </div>
-          <div class="card">
-            <h3 class="card-title">Ferramentas</h3>
-            <p class="card-text">Git e GitHub, metodologias ágeis (Agile, DevOps).</p>
-          </div>
-          <div class="card">
-            <h3 class="card-title">Soft Skills</h3>
-            <p class="card-text">Organização, Adaptabilidade, Comunicação, Resolução de Problemas.</p>
+      <!-- Skills Section -->
+      <section id="skills" class="skills-section">
+        <div class="skills-container container">
+          <h2 class="section-title text-center">Habilidades</h2>
+          <div class="grid-container">
+            <div class="card">
+              <h3 class="card-title">Front-end</h3>
+              <p class="card-text">HTML, CSS, JavaScript, responsividade, UI/UX.</p>
+            </div>
+            <div class="card">
+              <h3 class="card-title">Back-end (Básico)</h3>
+              <p class="card-text">Conhecimento em lógica de programação e Python.</p>
+            </div>
+            <div class="card">
+              <h3 class="card-title">Ferramentas</h3>
+              <p class="card-text">Git e GitHub, metodologias ágeis (Agile, DevOps).</p>
+            </div>
+            <div class="card">
+              <h3 class="card-title">Soft Skills</h3>
+              <p class="card-text">Organização, Adaptabilidade, Comunicação, Resolução de Problemas.</p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects-section">
-      <div class="container">
-        <h2 class="section-title text-center">Projetos</h2>
-        <div class="grid-container">
-          <div class="card">
-            <h3 class="card-title">Projeto 1</h3>
-            <p class="card-text">Breve descrição do projeto. Fale sobre o objetivo, o que ele faz e quais tecnologias
-              usou.</p>
-            <a href="#" class="link-button">Ver no GitHub &rarr;</a>
+      <!-- Projects Section -->
+      <section id="projects" class="projects-section">
+        <div class="container">
+          <h2 class="section-title text-center">Projetos</h2>
+          <div class="grid-container">
+            <div class="card">
+              <h3 class="card-title">Projeto 1</h3>
+              <p class="card-text">Breve descrição do projeto. Fale sobre o objetivo, o que ele faz e quais tecnologias
+                usou.</p>
+              <a href="#" class="link-button">Ver no GitHub &rarr;</a>
+            </div>
+            <div class="card">
+              <h3 class="card-title">Projeto 2</h3>
+              <p class="card-text">Breve descrição do projeto. Fale sobre o objetivo, o que ele faz e quais tecnologias
+                usou.</p>
+              <a href="#" class="link-button">Ver no GitHub &rarr;</a>
+            </div>
           </div>
-          <div class="card">
-            <h3 class="card-title">Projeto 2</h3>
-            <p class="card-text">Breve descrição do projeto. Fale sobre o objetivo, o que ele faz e quais tecnologias
-              usou.</p>
-            <a href="#" class="link-button">Ver no GitHub &rarr;</a>
+          <div class="all-projects-link">
+            <a href="https://github.com/Karen0nog" target="_blank">Ver todos os projetos no
+              GitHub</a>
           </div>
         </div>
-        <div class="all-projects-link">
-          <a href="https://github.com/Karen0nog" target="_blank">Ver todos os projetos no
-            GitHub</a>
-        </div>
-      </div>
-    </section>
+      </section>
+    </main>
+  </div>
 
-    <!--Contact Section-->
-    <section id="contact" class="contact-section">
-      <div class="contact-container container">
-        <div class="contact-info-container">
-          <h2 class="contact-title">Vamos conversar e criar algo incrível juntos!</h2>
-          <p class="contact-text">Se você está procurando uma desenvolvedora front-end dedicada e apaixonada, adoraria
-            ouvir de você!</p>
-        </div>
-      </div>
-    </section>
-
-  </main>
-  <footer>
-    <div class="container">
-      <p class="footer-text">&copy; 2024 Karen Nogueira. Todos os direitos reservados.</p>
-    </div>
+  <footer class="main-footer">
+    <p class="footer-text">&copy; 2024 Karen Nogueira. Todos os direitos reservados.</p>
   </footer>
+
 
   <script src="js/script.js"></script>
 </body>

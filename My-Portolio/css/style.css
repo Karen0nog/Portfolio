@@ -27,9 +27,16 @@ body {
   font-family: "Poppins", sans-serif;
   background: var(--light-background);
   color: var(--light-text-primary);
-  scroll-behavior: smooth;
   line-height: 1.6;
   display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page-content-wrapper {
+  display: flex;
+  flex: 1;
+  width: 100%;
   min-height: 100vh;
 }
 
@@ -50,19 +57,23 @@ body {
   margin-bottom: 40px;
 }
 
+/* ========== SIDEBAR ========== */
+
 .sidebar {
+  display: flex;
+  flex-direction: column;
   width: 300px;
+  height: auto;
   background: linear-gradient(135deg, var(--light-surface) 0%, #f8fafc 100%);
   border-right: 1px solid var(--light-border);
   box-shadow: 2px 0 10px #0000001a;
-  height: 100vh;
-  transition: transform 0.3s ease;
 }
 
 .sidebar-content {
   padding: 40px 30px;
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   height: 100%;
 }
 
@@ -70,7 +81,7 @@ body {
   text-align: center;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  flex: 1 1 auto;
 }
 
 .profile-image {
@@ -79,7 +90,6 @@ body {
   margin: 0 auto 20px;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 8px 32px #8579bb4d;
 }
 
 .profile-image img {
@@ -90,7 +100,7 @@ body {
 }
 
 .sidebar-nav {
-  margin-bottom: 40px 0;
+  margin: 40px 0;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -105,7 +115,6 @@ body {
   border-radius: 8px;
   margin-bottom: 8px;
   transition: all 0.3s ease;
-  border-left: 3px solid transparent;
 }
 
 .nav-link:hover {
@@ -114,80 +123,75 @@ body {
   box-shadow: 0 6px 20px #0000004d;
 }
 
-.nav-link-contact {
+.contact-button-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   border: 1px solid var(--light-text-primary);
   color: var(--light-text-primary);
-  font-weight: 500;
   padding: 10px 20px;
   border-radius: 8px;
-  text-align: center;
   margin-top: 20px;
   text-decoration: none;
   transition: all 0.3s ease;
+  gap: 8px;
 }
 
-.nav-link-contact:hover {
+.contact-button-wrapper:hover {
   background: linear-gradient(45deg, #b03a99, #701f6e, #2f4f7f);
   color: #fff;
-  font-weight: 500;
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px #0000004d;
+}
+
+.contact-button-wrapper:hover .whatsapp-icon,
+.contact-button-wrapper:hover .nav-link-contact {
+  color: #fff;
+}
+.nav-link-contact {
+  text-decoration: none;
 }
 
 .contact-info {
-  width: 100%;
-  max-width: 300px;
-  text-align: left;
-  padding: 20px 15px;
+  margin-top: 40px;
+  margin-bottom: 0;
+  padding-top: 20px;
   border-top: 1px solid var(--light-border);
-  color: var(--light-accent);
-  margin-top: auto;
- 
 }
 
 .contact-title {
   margin-bottom: 20px;
   text-align: center;
-  font-size: 1.4rem;
+  font-size: 1.2em;
   font-weight: 600;
   color: var(--light-text-primary);
-
 }
 
-.contact-item,
-.social-links a {
+.contact-item {
   display: flex;
   align-items: center;
-  margin-left: 0;
   padding: 6px 0;
   text-decoration: none;
   color: var(--light-accent);
-  padding-left: 0;
   font-size: 0.9rem;
 }
 
-.contact-item i,
-.social-links a i {
+.contact-item i {
   margin-right: 12px;
   font-size: 1.1rem;
   width: 20px;
   text-align: center;
-  
 }
 
-
-.social-links {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  
+.contact-item a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* ========== MAIN CONTENT ========== */
 
 .main-content {
   flex: 1;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -200,7 +204,6 @@ body {
 }
 
 .hero-content {
-  width: 90%;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -230,8 +233,7 @@ body {
 /* ========== SKILLS SECTION ========== */
 
 .skills-section,
-.projects-section,
-.contact-section {
+.projects-section {
   padding: 60px 0;
   border-bottom: 1px solid var(--light-border);
 }
@@ -325,75 +327,68 @@ body {
   box-shadow: 0 10px 20px #00000033;
 }
 
-/* Footer */
-footer {
+/* ========== FOOTER ====== */
+
+.main-footer {
+  width: 100%;
+  height: 60px;
   background-color: #f0f2f5;
-  padding: 24px 0;
-  text-align: center;
   color: #a0aec0;
-  border-top: 1px solid #2d3748;
+  border-top: 1px solid var(--light-border);
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
+
+.footer-text {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Utility Classes */
 
 .hidden {
   display: none !important;
 }
 
-.show-mobile-menu {
-  display: flex !important;
-}
-
-.dropdown-content.show {
-  display: block;
-}
+/* ========== RESPONSIVIDADE ========== */
 
 /* Mobile */
 @media (max-width: 767px) {
-  .desktop-nav {
-    display: none;
-  }
-  .mobile-menu-button {
-    display: block;
-  }
-  .header-container {
-    justify-content: space-between;
-    padding: 0 24px;
-  }
-
-  .mobile-nav {
+  .page-content-wrapper {
     flex-direction: column;
-    text-align: center;
-    gap: 12px;
-    padding: 15px 24px;
-    background: var(--light-surface);
-    border-top: 1px solid var(--light-border);
-    box-shadow: 0 4px 15px #00000033;
-    bottom: 0;
-    width: 100%;
-    box-sizing: border-box;
   }
 
-  .mobile-nav a.mobile-nav-link {
-    display: block;
+  .sidebar {
     width: 100%;
-    max-width: 300px;
-    margin: 0 auto;
-    padding: 12px 20px;
-    font-size: 1.1rem;
+    height: auto;
+    position: relative;
+  }
+
+  .sidebar-content {
+    height: auto;
+    padding: 20px;
+  }
+
+  .profile-section {
+    flex-direction: column;
+  }
+
+  .contact-info {
+    margin-top: 20px;
+    padding-top: 20px;
+  }
+
+  .main-content {
+    margin-left: 0;
   }
 }
 
 /* Tablets and Desktops */
 
 @media (min-width: 768px) {
-  .mobile-menu-button,
-  .mobile-nav {
-    display: none !important;
-  }
-
-  .desktop-nav {
-    display: flex;
-  }
-
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -407,26 +402,6 @@ footer {
   .hero-description {
     max-width: 50%;
     padding-left: 20px;
-  }
-
-  .about-container {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    text-align: left;
-  }
-
-  .about-image {
-    width: 40%;
-    max-width: none;
-  }
-
-  .about-container-wrapper {
-    width: 55%;
-  }
-
-  .social-links {
-    justify-content: flex-start;
   }
 
   .projects-section .grid-container {
