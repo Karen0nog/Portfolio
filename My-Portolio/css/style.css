@@ -31,6 +31,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 .page-content-wrapper {
@@ -51,7 +52,7 @@ body {
 }
 
 .section-title {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
   color: var(--light-text-primary);
   margin-bottom: 40px;
@@ -106,6 +107,12 @@ body {
   gap: 8px;
 }
 
+.nav-link,
+.nav-link-contact {
+  text-decoration: none;
+  font-size: 1rem;
+}
+
 .nav-link {
   display: block;
   padding: 12px 20px;
@@ -147,9 +154,6 @@ body {
 .contact-button-wrapper:hover .whatsapp-icon,
 .contact-button-wrapper:hover .nav-link-contact {
   color: #fff;
-}
-.nav-link-contact {
-  text-decoration: none;
 }
 
 .contact-info {
@@ -230,6 +234,43 @@ body {
   font-size: 0.9rem;
 }
 
+/* ========== ABOUT SECTION ========== */
+
+.about-section {
+  border-bottom: 1px solid var(--light-border);
+  transition: box-shadow 0.2s;
+  padding: 60px 0;
+}
+.about-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.7;
+}
+.about-subtitle-tag {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.about-content-hidden {
+  display: none;
+}
+
+.about-toggle-btn {
+  background: var(--light-surface);
+  border: none;
+  cursor: pointer;
+  font-size: 1.3rem;
+  color: var(--light-accent);
+  transition: transform 0.3s;
+  padding: 0;
+  margin-left: 4px;
+}
+
+.about-toggle-btn.rotated i {
+  transform: rotate(90deg);
+  transition: transform 0.3s;
+}
+
 /* ========== SKILLS SECTION ========== */
 
 .skills-section,
@@ -253,9 +294,7 @@ body {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 12px;
-  border: 1px solid #ffffff2e;
   padding: 5px;
-
 }
 
 .card {
@@ -264,7 +303,7 @@ body {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 12px;
-  border: 1px solid #ffffff2e;
+
   padding: 24px;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out,
     background 0.3s ease, color 0.3s ease, font-weight 0.3s ease;
@@ -286,6 +325,12 @@ body {
 .card:hover .card-title,
 .card:hover .card-text {
   color: #fff;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: var(--light-text-secondary);
+  margin: 10px 0;
 }
 
 .skills-icons {
