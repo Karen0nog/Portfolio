@@ -247,7 +247,16 @@ body {
   margin: 0 auto;
 }
 
-/* Card Component */
+.card-skills {
+  background: #ffffff40;
+  box-shadow: 0 8px 32px 0 #1f26875e;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 12px;
+  border: 1px solid #ffffff2e;
+  padding: 5px;
+
+}
 
 .card {
   background: #ffffff40;
@@ -279,16 +288,11 @@ body {
   color: #fff;
 }
 
-.card-title {
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: var(--light-text-secondary);
-  margin-bottom: 10px;
-}
-
-.card-text {
-  color: var(--light-text-secondary);
-  margin-bottom: 10px;
+.skills-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
 }
 
 .all-projects-link {
