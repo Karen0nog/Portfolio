@@ -121,7 +121,6 @@ body {
   font-weight: 500;
   border-radius: 8px;
   transition: all 0.3s ease;
-  
 }
 
 .nav-link:hover {
@@ -190,6 +189,14 @@ body {
 .contact-item a {
   text-decoration: none;
   color: inherit;
+}
+
+.contact-social-links {
+  display: none;
+}
+
+.contact-info {
+  display: block;
 }
 
 /* ========== MAIN CONTENT ========== */
@@ -302,7 +309,6 @@ body {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 12px;
-
   padding: 24px;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out,
     background 0.3s ease, color 0.3s ease, font-weight 0.3s ease;
@@ -420,17 +426,93 @@ body {
     padding: 20px;
   }
 
+  .sidebar-nav .nav-link {
+    display: none !important;
+  }
+
+  .sidebar-nav .nav-link-contact {
+    display: inline-block !important;
+  }
+
   .profile-section {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+
+  .profile-image {
+    margin-bottom: 0;
+  }
+
+  .sidebar-nav {
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact-button-wrapper {
+    background: linear-gradient(45deg, #b03a99, #701f6e, #2f4f7f);
+    margin-top: 0;
+    margin-bottom: 12px;
+  }
+  .contact-button-wrapper .whatsapp-icon,
+  .contact-button-wrapper .nav-link-contact {
+    color: #fff;
+  }
+
+  .contact-social-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 8px;
+    margin-left: 0;
   }
 
   .contact-info {
-    margin-top: 20px;
-    padding-top: 20px;
+    display: none;
+  }
+
+  .contact-social-links .contact-item {
+    display: flex;
+    padding: 10px 20px;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+    border: 1px solid var(--light-text-primary);
+  }
+
+  .contact-social-links .contact-item {
+    font-size: 1rem;
+    color: var(--light-accent);
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+  }
+
+  .contact-info {
+    display: none;
   }
 
   .main-content {
     margin-left: 0;
+  }
+
+  .skills-section .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6px;
+    width: 100%;
+  }
+
+  .card-skills {
+    padding: 2px;
+    font-size: 0.8rem;
   }
 }
 
