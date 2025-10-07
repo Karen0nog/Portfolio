@@ -1,11 +1,22 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const toggleBtn = document.querySelector("#about-Toggle-Btn");
-  const aboutContent = document.querySelector("#about-content");
-  const chevronIcon = toggleBtn.querySelector("i");
-  if (toggleBtn && aboutContent) {
-    toggleBtn.addEventListener("click", () => {
-      aboutContent.classList.toggle("about-content-hidden");
-      toggleBtn.classList.toggle("rotated");
+  const readMoreBtn = document.querySelector("#about-ReadMore-Btn");
+  const moreContent = document.querySelector("#about-more");
+  const aboutText = document.querySelector(".about-text");
+
+  if (readMoreBtn && moreContent && aboutText) {
+    readMoreBtn.addEventListener("click", (e) => {
+      moreContent.classList.toggle("about-content-hidden");
+      readMoreBtn.style.display = "none";
+      e.stopPropagation();
+    });
+    document.addEventListener("click", (e) => {
+      if (
+        !moreContent.classList.contains("about-content-hidden") &&
+        !aboutText.contains(e.target)
+      ) {
+        moreContent.classList.add("about-content-hidden");
+        readMoreBtn.style.display = "inline-block";
+      }
     });
   }
 });

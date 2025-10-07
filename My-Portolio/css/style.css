@@ -116,6 +116,7 @@ body {
 .nav-link {
   display: block;
   padding: 12px 20px;
+  border: 1px solid var(--light-border);
   color: var(--light-text-primary);
   text-decoration: none;
   font-weight: 500;
@@ -136,11 +137,11 @@ body {
   text-align: center;
   border: 1px solid var(--light-text-primary);
   color: var(--light-text-primary);
-  padding: 10px 20px;
+  padding: 12px 20px;
   border-radius: 8px;
-  margin-top: 20px;
   text-decoration: none;
   transition: all 0.3s ease;
+  font-weight: 500;
   gap: 8px;
 }
 
@@ -244,7 +245,7 @@ body {
 /* ========== ABOUT SECTION ========== */
 
 .about-section {
-  border-bottom: 1px solid var(--light-border);
+  /* border-bottom: 1px solid var(--light-border); */
   transition: box-shadow 0.2s;
   padding: 30px 0;
 }
@@ -282,7 +283,7 @@ body {
 .skills-section,
 .projects-section {
   padding: 30px 0;
-  border-bottom: 1px solid var(--light-border);
+  /* border-bottom: 1px solid var(--light-border); */
 }
 
 .grid-container {
@@ -353,7 +354,7 @@ body {
 .link-button,
 .all-projects-link a {
   display: inline-block;
-  font-weight: 500;
+  font-weight: 600;
   padding: 8px 16px;
   border-radius: 50px;
   text-decoration: none;
@@ -363,17 +364,7 @@ body {
   color: var(--light-accent);
 }
 
-.link-button {
-  background-color: #fff;
-  color: var(--light-accent);
-  transform: translateY(-2px);
-}
-
-.link-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 20px #00000033;
-}
-
+.link-button:hover,
 .all-projects-link a:hover {
   background-color: var(--light-accent);
   color: #fff;
@@ -381,6 +372,28 @@ body {
   box-shadow: 0 10px 20px #00000033;
 }
 
+.link-button-deploy {
+  display: inline-block;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  background: #fff;
+  border: 2px solid var(--light-border);
+  font-size: 1rem;
+  color: var(--light-accent);
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.link-button-deploy:hover {
+
+  background-color: #fff;
+  color: var(--light-accent);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px #00000033;
+}
 /* ========== FOOTER ====== */
 
 .main-footer {
@@ -454,8 +467,15 @@ body {
 
   .contact-button-wrapper {
     background: linear-gradient(45deg, #b03a99, #701f6e, #2f4f7f);
-    margin-top: 0;
-    margin-bottom: 12px;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto 8px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    padding: 10px 20px;
+    box-sizing: border-box;
   }
   .contact-button-wrapper .whatsapp-icon,
   .contact-button-wrapper .nav-link-contact {
@@ -468,8 +488,8 @@ body {
     align-items: center;
     justify-content: center;
     gap: 8px;
-    margin-top: 8px;
-    margin-left: 0;
+    width: 100%;
+    margin: 0 auto;
   }
 
   .contact-info {
@@ -478,21 +498,19 @@ body {
 
   .contact-social-links .contact-item {
     display: flex;
-    padding: 10px 20px;
-    border-radius: 8px;
     align-items: center;
     justify-content: center;
-    margin-bottom: 8px;
+    width: 100%;
+    max-width: 320px;
+    padding: 10px 20px;
+    border-radius: 8px;
     box-sizing: border-box;
     border: 1px solid var(--light-text-primary);
-  }
-
-  .contact-social-links .contact-item {
     font-size: 1rem;
     color: var(--light-accent);
-    align-items: center;
-    display: flex;
     text-decoration: none;
+    background: #fff;
+    margin: 0 auto;
   }
 
   .contact-info {
