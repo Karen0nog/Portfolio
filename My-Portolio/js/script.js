@@ -1,37 +1,22 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
+  const readMoreBtn = document.querySelector("#about-ReadMore-Btn");
+  const moreContent = document.querySelector("#about-more");
+  const aboutText = document.querySelector(".about-text");
 
-    const mobileMenuButton = document.querySelector('#mobile-menu-button');
-    const mobileMenu = document.querySelector('#mobile-menu');
-
-    if (mobileMenuButton && mobileMenu) {
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('show-mobile-menu');
-        });
-    }
-
-    const menuBtn = document.querySelector('#menu-btn');
-    const dropdownContent = document.querySelector('.dropdown-content');
-
-    if(menuBtn && dropdownContent) {
-        menuBtn.addEventListener('click',(event) => {
-            event.stopPropagation();
-            dropdownContent.classList.toggle('show');
-        });
-
-        document.addEventListener('click', (event) => {
-            if(!menuBtn.contains(event.target) && !dropdownContent.contains(event.target)) {
-                dropdownContent.classList.remove('show');
-            }
-        });
-    }
-
-    const mobileNavLinks = document.querySelectorAll('.mobile-nav-link, .mobile-nav-link-contact');
-
-    mobileNavLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            if (mobileMenu) {
-                mobileMenu.classList.remove('show-mobile-menu');
-            }
-        });
+  if (readMoreBtn && moreContent && aboutText) {
+    readMoreBtn.addEventListener("click", (e) => {
+      moreContent.classList.toggle("about-content-hidden");
+      readMoreBtn.style.display = "none";
+      e.stopPropagation();
     });
+    document.addEventListener("click", (e) => {
+      if (
+        !moreContent.classList.contains("about-content-hidden") &&
+        !aboutText.contains(e.target)
+      ) {
+        moreContent.classList.add("about-content-hidden");
+        readMoreBtn.style.display = "inline-block";
+      }
+    });
+  }
 });
