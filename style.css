@@ -292,6 +292,12 @@ body {
 }
 /* ========== PROJECTS ====== */
 
+.projects-container {
+  width: 100vw;
+  background: var(--surface);
+  padding: 64px 0;
+  box-shadow: var(--shadow);
+}
 .projects-list {
   display: flex;
   gap: 32px;
@@ -303,17 +309,17 @@ body {
 .project-card {
   background: var(--surface);
   border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  padding: 24px 24px 20px 24px;
   width: 320px;
+  padding: 24px 24px 20px 24px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  box-shadow: 0 8px 24px -4px #0003;
   transition: box-shadow 0.2s;
 }
 
 .project-card:hover {
-  box-shadow: 0 8px 32px #b03a9940;
+  box-shadow: 0 12px 32px -4px var(--primary);
 }
 
 .project-img {
@@ -394,61 +400,47 @@ body {
   display: flex;
   gap: 12px;
   margin-top: 8px;
+  justify-content: center;
+  width: 100%;
+}
+
+.project-buttons .btn {
+  font-size: 0.9rem;
+  padding: 7px 16px;
+  border-radius: 10px;
+  gap: 6px;
 }
 
 .btn {
-  font-size: 1rem;
-  font-weight: 600;
-  padding: 10px 24px;
-  border-radius: 12px;
   text-decoration: none;
   border: none;
   cursor: pointer;
   transition: background 0.2s, color 0.2s;
   box-shadow: 0 2px 8px #b03a9940;
-  display: inline-block;
   display: flex;
   align-items: center;
   gap: 8px;
 }
 
-.btn-purple {
-  background: var(--accent);
+.btn-deploy {
+  background: linear-gradient(45deg, #b03a99, #701f6e, #2f4f7f);
   color: #fff;
 }
 
-.btn-purple:hover {
-  background: var(--accent-dark);
+.btn-deploy:hover {
+  background: linear-gradient(-45deg, #b03a99, #701f6e, #2f4f7f);
 }
 
-.btn-dark {
-  background: #1e293b;
-  color: #fff;
+.btn-code {
+  color: var(--primary);
 }
 
-.btn-dark:hover {
-  background: #334155;
+.btn-code:hover {
+  color: var(--secondary);
 }
 
 .btn i {
   font-size: 1.1rem;
-}
-
-.all-projects-link {
-  text-align: center;
-  margin-top: 32px;
-}
-
-.all-projects-link a {
-  color: var(--accent);
-  font-weight: 600;
-  text-decoration: none;
-  font-size: 1.1rem;
-  transition: color 0.2s;
-}
-
-.all-projects-link a:hover {
-  color: var(--accent-dark);
 }
 
 /* ========== FOOTER ====== */
