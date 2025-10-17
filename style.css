@@ -3,6 +3,7 @@
   --surface: #fff;
   --primary: #1e0458;
   --secondary: #9e9dcd;
+  --border: #7c7b9b;
   --accent: #b03a99;
   --accent-dark: #701f6e;
   --border: #d4e0ee;
@@ -10,21 +11,6 @@
   --radius: 18px;
   --skill-card-bg: #fff;
   --skill-card-shadow: 0 4px 16px #00000014;
-  --tag-react-text: #2563eb;
-  --tag-charts: #f0f9ff;
-  --tag-charts-text: #0ea5e9;
-  --tag-tailwind: #f0fdfa;
-  --tag-tailwind-text: #14b8a6;
-  --tag-redux: #f3e8ff;
-  --tag-redux-text: #a21caf;
-  --tag-api: #fef9c3;
-  --tag-api-text: #ca8a04;
-  --tag-js: #fef3c7;
-  --tag-js-text: #f59e42;
-  --tag-storage: #e0f2fe;
-  --tag-storage-text: #0284c7;
-  --tag-sass: #fce7f3;
-  --tag-sass-text: #db2777;
   --footer: #111827;
 }
 
@@ -49,6 +35,17 @@ body {
 
 .text-center {
   text-align: center;
+}
+
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.scroll-reveal.active {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* ========== NAVBAR ========== */
@@ -320,17 +317,20 @@ body {
 }
 
 .project-card:hover {
-  box-shadow: 0 12px 32px -4px #1e045814;
+  transform: scale(1.05);
+  transition: ease-in-out 0.3s;
 }
 
 .project-img {
   width: 100%;
-  height: 140px;
+  display: block;
+  height: auto;
   object-fit: cover;
   border-radius: 12px;
   margin-bottom: 18px;
   background: var(--background);
   border: 2px solid #e0e7ff;
+  transition: transform 0.3s ease-in-out;
 }
 
 .project-title {
@@ -362,39 +362,6 @@ body {
   font-weight: 500;
   border: none;
   margin-bottom: 2px;
-}
-
-.tag-react {
-  background: var(--tag-react);
-  color: var(--tag-react-text);
-}
-.tag-charts {
-  background: var(--tag-charts);
-  color: var(--tag-charts-text);
-}
-.tag-tailwind {
-  background: var(--tag-tailwind);
-  color: var(--tag-tailwind-text);
-}
-.tag-redux {
-  background: var(--tag-redux);
-  color: var(--tag-redux-text);
-}
-.tag-api {
-  background: var(--tag-api);
-  color: var(--tag-api-text);
-}
-.tag-js {
-  background: var(--tag-js);
-  color: var(--tag-js-text);
-}
-.tag-storage {
-  background: var(--tag-storage);
-  color: var(--tag-storage-text);
-}
-.tag-sass {
-  background: var(--tag-sass);
-  color: var(--tag-sass-text);
 }
 
 .project-buttons {
@@ -472,7 +439,7 @@ body {
 .footer-name {
   font-size: 1rem;
   font-weight: 600;
-  margin-bottom: 4px; 
+  margin-bottom: 4px;
 }
 
 .footer-role {
@@ -513,7 +480,6 @@ body {
   text-align: center;
   font-size: 0.98rem;
   padding: 18px;
-
 }
 
 /* Utility Classes */
@@ -662,6 +628,4 @@ body {
     font-size: 0.92rem;
     padding-bottom: 12px;
   }
-
-
 }
