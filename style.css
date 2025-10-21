@@ -314,6 +314,7 @@ body {
   align-items: flex-start;
   box-shadow: 0 8px 24px -4px #0003;
   transition: box-shadow 0.2s;
+   min-height: 380px;
 }
 
 .project-card:hover {
@@ -367,9 +368,9 @@ body {
 .project-buttons {
   display: flex;
   gap: 12px;
-  margin-top: 8px;
   justify-content: center;
   width: 100%;
+  margin-top: auto;
 }
 
 .project-buttons .btn {
