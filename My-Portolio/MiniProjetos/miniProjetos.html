@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Projetos JavaScript</title>
+    <meta name="description"
+        content="Coleção de mini projetos em JavaScript. Selecione um projeto no menu para visualizar.">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="main">
+        <aside class="sidebar">
+            <nav class="nav">
+                <ul>
+                    <li><button type="button" onclick="carregarProjeto('projeto1.html')">Projeto 1</button></li>
+                    <li><button type="button" onclick="carregarProjeto('projeto2.html')">Projeto 2</button></li>
+                    <li><button type="button" onclick="carregarProjeto('projeto3.html')">Projeto 3</button></li>
+                </ul>
+            </nav>
+        </aside>
+        <section id="projeto-container" >
+            <h1 id="projeto-title" >Mini Projetos</h1>
+            <p id="projeto-intro">Selecione um projeto no menu para visualizar.</p>
+
+            <div id="projeto-content">
+                <div class="preview-wrapper">
+                    <iframe id="projeto-preview" title="Visualização do projeto selecionado" src="" aria-label="Preview do projeto"></iframe>
+                    <div class="preview-fallback">Nome do projeto</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
