@@ -15,16 +15,20 @@
         <aside class="sidebar">
             <nav class="nav">
                 <ul>
-                    <li><button type="button" onclick="carregarProjeto('./GeradorDeBoxShadow/geradorDeBoxShadow.html')">Projeto Gerador de Shadow Box</button></li>
-                    <li><button type="button" onclick="carregarProjeto('./PaletaDeCores/paletaDeCores.html')">Projeto Gerador de Paleta de Cores</button></li>
-                    <li><button type="button" onclick="carregarProjeto()">Projeto 3</button></li>
+                    <li><button type="button"
+                            onclick="carregarProjeto('./GeradorDeBoxShadow/geradorDeBoxShadow.html')">Projeto Gerador de
+                            Shadow Box</button></li>
+                    <li><button type="button" onclick="carregarProjeto('./PaletaDeCores/paletaDeCores.html')">Projeto
+                            Gerador de Paleta de Cores</button></li>
+                    <li><button type="button" onclick="carregarProjeto('./ToDo/toDo.html')">Projeto To Do List</button>
+                    </li>
                 </ul>
             </nav>
         </aside>
         <section id="projeto-container">
             <h1 id="projeto-title">Mini Projetos</h1>
             <p id="projeto-intro">Selecione um projeto no menu para visualizar.</p>
-            
+
             <div id="voltar">
                 <a href="/index.html">Voltar para Portfólio</a>
             </div>
@@ -32,7 +36,8 @@
             <div id="projeto-content">
                 <div class="preview-wrapper">
                     <iframe id="projeto-preview" title="Visualização do projeto selecionado" src="" loading="lazy"
-                        sandbox="allow-scripts allow-same-origin" aria-label="Preview do projeto"></iframe>
+                        sandbox="allow-scripts allow-same-origin allow-forms" aria-label="Preview do projeto"></iframe>
+
                 </div>
             </div>
         </section>
