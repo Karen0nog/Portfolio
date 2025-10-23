@@ -46,9 +46,10 @@ body {
 }
 
 h1 {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   text-align: center;
   color: var(--primary);
+  font-size: 1.5rem;
 }
 
 #generate-button {
@@ -58,11 +59,11 @@ h1 {
   text-align: center;
   font-size: 1rem;
   font-weight: 500;
-  padding: 0.8rem 1.8rem;
+  padding: 0.8rem 1.5rem;
   cursor: pointer;
   border-radius: 8px;
   transition: background-color 0.3s, transform 0.1s, box-shadow 0.3s;
-  margin: 3.5rem auto;
+  margin: 3.5rem 0;
 }
 
 #generate-button:hover {
