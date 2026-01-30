@@ -1,0 +1,207 @@
+[33mcommit 64a64a4e9a7ca03893b7e88d3b36037539e832de[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32madd_motion[m[33m)[m
+Author: Karen <karen0nogueira@gmail.com>
+Date:   Fri Jan 30 13:18:45 2026 -0300
+
+    add botão de Leia mais e Leia menos no projects-description
+
+[33mcommit d46bbd5a7ac60f061c20617a50d1364b5573056d[m[33m ([m[1;31morigin/add_motion[m[33m)[m
+Author: Karen <karen0nogueira@gmail.com>
+Date:   Thu Jan 29 22:18:02 2026 -0300
+
+    alterado cor do hover dos ícones do footer
+
+[33mcommit bcb643d82767b570e033447c48d00ee3f62e4a9d[m
+Author: Karen <karen0nogueira@gmail.com>
+Date:   Thu Jan 29 22:04:48 2026 -0300
+
+    alterando cores e hover do project-cards
+
+[33mcommit d8c8606aeb43596c5e7dc18c75108c4ca9057be6[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Author: Karen <karen0nogueira@gmail.com>
+Date:   Thu Nov 27 20:12:11 2025 -0300
+
+    footer data fixed
+
+[33mcommit 6d1ee5b50a576a252fdd65fffdfaa754b110f8e7[m
+Author: Karen <karen0nogueira@gmail.com>
+Date:   Fri Oct 31 11:48:28 2025 -0300
+
+    entrega do projeto access gate
+
+[33mcommit 56016f3fa2cba8183a49a82b698326f92e5f2e74[m[33m ([m[1;31morigin/mini-projetos[m[33m, [m[1;32mmini-projetos[m[33m)[m
+Author: Karen <karen0nogueira@gmail.com>
+Date:   Thu Oct 23 20:41:21 2025 -0300
+
+    projeto To Do List pronto
+
+[33mcommit 44a9c8d756a69d93dff6251322efcfe4c763897f[m
+Author: Karen <karen0nogueira@gmail.com>
+Date:   Thu Oct 23 13:27:18 2025 -0300
+
+    responsividade página mini projetos
+
+[33mcommit e1c2c266782cfe4a65e6f3573cf601fded197fa2[m
+Author: Karen <karen0nogueira@gmail.com>
+Date:   Thu Oct 23 12:30:09 2025 -0300
+
+    adiciona projeto gerador de paleta de cores  na landing page principal
+
+[33mcommit c8fe31554da730f53ab7fdc3b51e4abef6d25bb1[m
+Author: Karen <karen0nogueira@gmail.com>
+Date:   Wed Oct 22 19:19:17 2025 -0300
+
+    adiciona projeto gerador de shadows na landing page principal
+
+[33mcommit ccd43a679c58adb8f7f13940345710b4e7bd74fb[m
+Author: Karen <karen0nogueira@gmail.com>
+Date:   Wed Oct 22 18:40:18 2025 -0300
+
+    projeto Gerador de Box Shadow completo
+
+[33mcommit b6a8ac33e7590ffdbd836f30fda09bb38a1529f1[m
+Author: Karen <karen0nogueira@gmail.com>
+Date:   Wed Oct 22 16:03:36 2025 -0300
+
+    feat: add mini projetos space
+
+[33mcommit 892042d8788c2d61eac485fae86d67ff3f76ad50[m
+Author: Karen <karen0nogueira@gmail.com>
+Date:   Wed Oct 22 16:00:39 2025 -0300
+
+    feat: add mini projetos space
+
+[33mcommit 828eca132bbe87cb9e761550ed6f0002b6b17086[m
+Author: Karen <karen0nogueira@gmail.com>
+Date:   Tue Oct 21 12:53:18 2025 -0300
+
+    feat(projects): adicionar imagem do novo projeto ao portfólio
+
+[33mcommit ee902175320f65ced87a1d0797ce31c4c21a8cc6[m
+Author: Karen <karen0nogueira@gmail.com>
+Date:   Tue Oct 21 12:46:20 2025 -0300
+
+    feat(projects): adicionar novo projeto ao portfólio
+
+[33mcommit 08506a350c843627a8384926704f0620bc84f4b6[m
+Author: Karen <karen0nogueira@gmail.com>
+Date:   Fri Oct 17 12:15:03 2025 -0300
+
+    feat: Finaliza infraestrutura de deploy e adiciona Scroll Reveal
+
+[33mcommit 6a14d12d9df6c4a4cc3c5bd2288de15cc511cee7[m
+Merge: 6e41b6d daf8c19
+Author: Karen <167024731+Karen0nog@users.noreply.github.com>
+Date:   Wed Oct 8 19:25:13 2025 -0300
+
+    Merge pull request #3 from Karen0nog/refactor/visual-update
+    
+    Esta solicitação de pull refatora o layout e a estrutura de conteúdo da página do portfólio index.html para modernizar seu design e melhorar a experiência do usuário. A navegação da barra lateral e as informações de contato são substituídas por uma barra de navegação superior e uma seção de destaque mais proeminente. As seções de habilidades e projetos foram redesenhadas para maior clareza e apelo visual.
+    
+    Atualizações de layout e navegação
+    
+    Substituição da barra de navegação lateral e da seção de perfil por uma barra de navegação superior para facilitar o acesso às seções principais (Sobre, Projetos, Experiência, Contato).
+    Remoção das informações de contato da barra lateral e integração das opções de contato nas áreas de destaque e da barra de navegação.
+    Redesenho do conteúdo e das seções
+    
+    Criação de uma nova seção de destaque com imagem de perfil, função, nome e uma introdução concisa, juntamente com um botão de contato do WhatsApp.
+    Atualizou a seção “Sobre” com uma narrativa mais pessoal e títulos mais claros, enfatizando a transição da moda para a tecnologia.
+    Apresentação de habilidades e projetos
+    
+    Redesenhou a seção de habilidades para usar cartões de habilidades baseados em ícones para HTML5, CSS3, JavaScript, React e Git/GitHub.
+    Reformulou a seção de projetos para destacar projetos individuais com cartões, imagens, descrições, tags e botões de ação para visualização e código-fonte.
+
+[33mcommit daf8c19d5f65c0f174c8122ba93d40d8df629e07[m[33m ([m[1;31morigin/refactor/visual-update[m[33m, [m[1;32mrefactor/visual-update[m[33m)[m
+Author: Karen <karen0nogueira@gmail.com>
+Date:   Wed Oct 8 19:23:04 2025 -0300
+
+    feat: página de portfólio pronta e responsiva para mobile
+
+[33mcommit 4e77a069406cedafc09fdcc935aebf272a250df2[m
+Author: Karen <karen0nogueira@gmail.com>
+Date:   Wed Oct 8 19:15:34 2025 -0300
+
+    Finaliza a responsividade mobile
+
+[33mcommit 68dddca359724c94f83d9c09f5e3e270bcbb5a54[m
+Author: Karen <karen0nogueira@gmail.com>
+Date:   Wed Oct 8 17:30:10 2025 -0300
+
+    Finaliza a seção de projetos: layout, botões centralizados e estilos ajustados
+
+[33mcommit 2dd14e5cb9bb243016f6025f9d7f070e94513f7e[m
+Author: Karen <karen0nogueira@gmail.com>
+Date:   Wed Oct 8 15:51:08 2025 -0300
+
+    ajuste na seção skills
+
+[33mcommit 10e6c639dcf6595c7b5e3594c8206f21519f684a[m
+Author: Karen <karen0nogueira@gmail.com>
+Date:   Wed Oct 8 15:40:15 2025 -0300
+
+    ajuste na seção about
+
+[33mcommit 725eb82e2e785a647dbf6f9bc301478d671f81d5[m
+Author: Karen <karen0nogueira@gmail.com>
+Date:   Wed Oct 8 15:11:46 2025 -0300
+
+    ajuste na seção hero
+
+[33mcommit 982c4011c1b39989f0ec567f8a0335b45f28c84a[m
+Author: Karen <karen0nogueira@gmail.com>
+Date:   Wed Oct 8 13:19:23 2025 -0300
+
+    feat: layout e estilos do novo portfólio e cards de projetos
+
+[33mcommit c2808f52cb05b7d3b533813c3ba8b7d27ebe4557[m
+Author: Karen <karen0nogueira@gmail.com>
+Date:   Tue Oct 7 21:42:47 2025 -0300
+
+    feat: atualiza seção About, Skills e Projects com novo layout
+
+[33mcommit 296536d004729096ef13c6354e33c4d4a45d3c5f[m
+Author: Karen <karen0nogueira@gmail.com>
+Date:   Tue Oct 7 21:17:52 2025 -0300
+
+    feat: Implementa Navbar e atualiza a seção Hero
+
+[33mcommit 6e41b6d86137529049c50aa43ecfe1e425884747[m
+Author: Karen <karen0nogueira@gmail.com>
+Date:   Tue Oct 7 11:31:17 2025 -0300
+
+    fix fechamento da tag 'aside'
+
+[33mcommit 2da2d6ebe715629253fd6c96575ca1bedfc6e418[m
+Author: Karen <167024731+Karen0nog@users.noreply.github.com>
+Date:   Mon Oct 6 22:31:05 2025 -0300
+
+    Revise README content for clarity and updates
+    
+    Updated personal description and portfolio details.
+
+[33mcommit b8da0ccfaeeb8aacd01a7b9a2d9b93d00a749024[m
+Merge: efcbfb4 beed98e
+Author: Karen <karen0nogueira@gmail.com>
+Date:   Mon Oct 6 22:20:59 2025 -0300
+
+    versão forçada para deploy
+
+[33mcommit efcbfb4d688ac8bd0cefbe75d6babe7486164aff[m
+Author: Karen <karen0nogueira@gmail.com>
+Date:   Mon Oct 6 22:18:37 2025 -0300
+
+    Forçando novo deploy do GitHub Pages
+
+[33mcommit 795ab6e6e453367ec0553571375bbd2427947b41[m[33m ([m[1;32mfeature/melhoria-home-page[m[33m)[m
+Author: Karen <karen0nogueira@gmail.com>
+Date:   Mon Oct 6 22:04:00 2025 -0300
+
+    Retira html, css e js da pasta MyPortfolio
+
+[33mcommit beed98ef8c1d71f150ac91546e029ebee4461259[m
+Merge: b9413b0 75dde41
+Author: Karen <167024731+Karen0nog@users.noreply.github.com>
+Date:   Mon Oct 6 21:52:05 2025 -0300
+
+    Merge pull request #2 from Karen0nog/feature/melhoria-home-page
+    
+    Este Pull Request atualiza o layout do portfólio, adicionando navegação lateral (sidebar), melhora a apresentação visual das seções de habilidades e projetos, e inclui um botão "Leia Mais..." na s

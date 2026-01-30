@@ -1,4 +1,52 @@
+// Parallax tilt simples e compatível com seus project-cards
+class ParallaxTilt {
+  constructor(element, maxRotate = 12) {
+    this.el = element;
+    this.maxRotate = maxRotate;
+    this.onMove = this.onMove.bind(this);
+    this.onEnter = this.onEnter.bind(this);
+    this.onLeave = this.onLeave.bind(this);
+    this.init();
+  }
+
+  init() {
+    this.el.addEventListener("mousemove", this.onMove);
+    this.el.addEventListener("mouseenter", this.onEnter);
+    this.el.addEventListener("mouseleave", this.onLeave);
+  }
+
+  onMove(e) {
+    const rect = this.el.getBoundingClientRect();
+    const width = rect.width;
+    const height = rect.height;
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    // calcula rotação relativa ao centro do card
+    const rotateY = ((x - width / 2) / width) * this.maxRotate;
+    const rotateX = -((y - height / 2) / height) * this.maxRotate;
+
+    this.el.style.setProperty("--rX", rotateX.toFixed(2));
+    this.el.style.setProperty("--rY", rotateY.toFixed(2));
+  }
+
+  onEnter() {
+    this.el.classList.add("card-active");
+    this.el.style.transition = "transform 120ms ease-out";
+  }
+
+  onLeave() {
+    this.el.classList.remove("card-active");
+    this.el.style.setProperty("--rX", 0);
+    this.el.style.setProperty("--rY", 0);
+    this.el.style.transition = "transform 600ms cubic-bezier(.2,.9,.3,1)";
+  }
+}
+
 document.addEventListener("DOMContentLoaded", function () {
+  const cards = document.querySelectorAll(".project-card");
+  cards.forEach((card) => new ParallaxTilt(card));
+
   // Scroll reveal
   const revealElements = document.querySelectorAll(".scroll-reveal");
 

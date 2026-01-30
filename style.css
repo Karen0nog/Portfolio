@@ -322,7 +322,6 @@ body {
   align-items: center;
   min-height: 380px;
   cursor: pointer;
-  backdrop-filter: blur(8px);
   transition: all 0.3s ease-in-out;
   border-radius: var(--radius);
   border: 1px solid transparent;
@@ -333,9 +332,8 @@ body {
 
 .project-card:hover {
   border-radius: var(--radius);
-  transform: scale(0.97);
   box-shadow: 0 -8px 24px -4px rgba(176, 58, 153, 0.5);
-  transition: all 0.3s ease-in-out;
+
 }
 
 .project-img {
@@ -443,6 +441,35 @@ body {
 
 .btn i {
   font-size: 1.1rem;
+}
+
+/* ===== Parallax tilt  ===== */
+
+/* dê perspectiva ao contêiner que contém os cards */
+.projects-list {
+  perspective: 1000px; 
+  -webkit-perspective: 1000px;
+}
+
+/* variáveis de rotação por card */
+.project-card {
+  --rX: 0;
+  --rY: 0;
+   --scale: 1;
+
+  transform-style: preserve-3d;
+  transform: rotateX(calc(var(--rX) * 1deg)) rotateY(calc(var(--rY) * 1deg));
+  transition: transform 600ms cubic-bezier(.2,.9,.3,1);
+}
+
+/* quando o mouse entra, removemos a transição suave pra resposta imediata */
+.project-card.card-active {
+  transition: none;
+}
+.project-card:hover {
+  --scale: 0.97; 
+  box-shadow: 0 -8px 24px -4px rgba(176, 58, 153, 0.5);
+  transition: box-shadow 0.3s ease-in-out;
 }
 
 /* ========== FOOTER ====== */
