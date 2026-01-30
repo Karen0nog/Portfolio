@@ -1,17 +1,20 @@
 :root {
-  --background: #f7f9fb;
+  --light-background: hsl(210, 33%, 98%);
+  --dark-background: #0f0f1a;
   --surface: #fff;
   --primary: #1e0458;
   --secondary: #9e9dcd;
-  --border: #7c7b9b;
-  --accent: #b03a99;
+  --name: #b03a99;
+  --text: #d4e2f3;
+  --text-secondary: #9e9dcd;
   --accent-dark: #701f6e;
   --border: #d4e0ee;
   --shadow: 0 4px 24px #0001;
   --radius: 18px;
   --skill-card-bg: #fff;
   --skill-card-shadow: 0 4px 16px #00000014;
-  --footer: #111827;
+  --footer: #1a0b2e;
+  --glass-effect: rgba(255, 255, 255, 0.04);
 }
 
 * {
@@ -20,16 +23,17 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Poppins", sans-serif;
-  background: var(--background);
-  color: var(--primary);
+  background: radial-gradient(circle at 30% 20%, #1e0f35 0%, #0f0f1a 100%);
+  overflow-x: hidden;
   min-height: 100vh;
 }
 
 .main-header {
-  background: var(--surface);
-  box-shadow: var(--shadow);
   padding: 0 32px;
 }
 
@@ -40,7 +44,9 @@ body {
 .scroll-reveal {
   opacity: 0;
   transform: translateY(30px);
-  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  transition:
+    opacity 0.6s ease-out,
+    transform 0.6s ease-out;
 }
 
 .scroll-reveal.active {
@@ -48,36 +54,33 @@ body {
   transform: translateY(0);
 }
 
-/* ========== NAVBAR ========== */
+/* ========== HEADER SECTION ========== */
+.header {
+  width: 100vw;
+  position: sticky;
+  top: 0;
+  padding: 10px 0;
+}
 
-.navbar ul {
-  list-style: none;
+.header-container {
+  max-width: 1100px;
+  margin: 0 auto;
   display: flex;
-  gap: 32px;
-  justify-content: flex-end;
-  margin: 0;
-  padding: 24px 0;
+  align-items: center;
+  justify-content: center;
 }
 
-.navbar a {
-  text-decoration: none;
+.header h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
   color: var(--primary);
-  font-weight: 300;
-  font-size: 1rem;
-  transition: color 0.2s;
-}
-
-.navbar a:hover {
-  color: var(--accent);
 }
 
 /* ========== HERO SECTION ========== */
 
 .hero {
   width: 100vw;
-  background: var(--surface);
   padding: 64px 0;
-  box-shadow: var(--shadow);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -99,7 +102,9 @@ body {
   align-items: center;
   padding: 4px;
   border-radius: 50%;
-  box-shadow: 0 8px 32px #0003, 0 2px 8px #b03a9940;
+  box-shadow:
+    0 8px 32px #0003,
+    0 2px 8px #b03a99;
   transition: box-shadow 0.2s;
 }
 
@@ -127,7 +132,7 @@ body {
 }
 
 .hero-name {
-  color: var(--primary);
+  color: var(--name);
   margin-bottom: 12px;
   font-size: 2.4rem;
   max-width: 400px;
@@ -137,7 +142,7 @@ body {
 
 .hero-description {
   font-size: 1.1rem;
-  color: #444;
+  color: var(--text);
   margin-bottom: 32px;
   max-width: 480px;
   line-height: 1.6;
@@ -154,7 +159,9 @@ body {
   font-size: 1rem;
   border-radius: 10px;
   box-shadow: 0 4px 12px #701f6e66;
-  transition: transform 0.2s, background 0.2s;
+  transition:
+    transform 0.2s,
+    background 0.2s;
 }
 
 .contact-button-wrapper:hover {
@@ -181,11 +188,14 @@ body {
   background: linear-gradient(45deg, #b03a99, #701f6e, #2f4f7f);
   margin: 12px auto;
   border-radius: 2px;
-  transition: width 0.3s, background 0.3s;
+  transition:
+    width 0.3s,
+    background 0.3s;
   vertical-align: middle;
 }
 
 .about-title-container:hover .section-underline,
+.skills-title-wrapper:hover .section-underline,
 .projects-container:hover .section-underline {
   width: 120px;
   background: linear-gradient(-45deg, #b03a99, #701f6e, #2f4f7f);
@@ -209,14 +219,14 @@ body {
 .about-title {
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--primary);
+  color: var(--border);
   margin-bottom: 0;
 }
 
 .about-subtitle {
   font-size: 1.2rem;
   font-weight: 500;
-  color: var(--primary);
+  color: var(--text);
   margin-bottom: 12px;
 }
 
@@ -227,7 +237,7 @@ body {
 
 .about-text {
   font-size: 1.08rem;
-  color: #444;
+  color: var(--text-secondary);
   line-height: 1.7;
   margin-bottom: 0;
   max-width: 900px;
@@ -238,9 +248,7 @@ body {
 /* ========== SKILLS SECTION ========== */
 
 .skills {
-  background: var(--surface);
   border-radius: var(--radius);
-  box-shadow: var(--shadow);
   padding: 0 32px 32px 32px;
   max-width: 1100px;
   margin: 32px auto;
@@ -251,10 +259,9 @@ body {
 }
 
 .skills-title {
-  font-size: 1.2rem;
-  color: var(--primary);
+  font-size: 1.5rem;
+  color: var(--border);
   margin-bottom: 0;
-  padding: 1rem;
 }
 
 .skills-list {
@@ -265,7 +272,7 @@ body {
   padding: 0;
   margin-top: 0;
   width: 100%;
-  color: #444;
+  color: var(--text);
 }
 
 .skill-card i {
@@ -292,9 +299,13 @@ body {
 
 .projects-container {
   width: 100vw;
-  background: var(--surface);
   padding: 64px 0;
-  box-shadow: var(--shadow);
+}
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--border);
+  text-align: center;
 }
 .projects-list {
   display: flex;
@@ -305,21 +316,28 @@ body {
 }
 
 .project-card {
-  background: var(--surface);
-  border-radius: var(--radius);
   width: 320px;
   padding: 24px 24px 20px 24px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  box-shadow: 0 8px 24px -4px #0003;
-  transition: box-shadow 0.2s;
-   min-height: 380px;
+  align-items: center;
+  min-height: 380px;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+  transition: all 0.3s ease-in-out;
+  border-radius: var(--radius);
+  border: 1px solid transparent; 
+  background: 
+    radial-gradient(circle at 30% 20%, #1e0f35 0%, #0f0f1a 100%) padding-box, 
+    linear-gradient(45deg, #b03a99, #701f6e, #2f4f7f) border-box;
 }
 
 .project-card:hover {
-  transform: scale(1.05);
-  transition: ease-in-out 0.3s;
+  border-radius: var(--radius);
+  transform: scale(0.97);
+  box-shadow: 0 -8px 24px -4px rgba(176, 58, 153, 0.5);
+  transition: all 0.3s ease-in-out;
+
 }
 
 .project-img {
@@ -329,21 +347,20 @@ body {
   object-fit: cover;
   border-radius: 12px;
   margin-bottom: 18px;
-  background: var(--background);
-  border: 2px solid #e0e7ff;
+  background: rgba(15, 15, 26, 0.85);
   transition: transform 0.3s ease-in-out;
 }
 
 .project-title {
   font-size: 1.15rem;
   font-weight: 600;
-  color: var(--primary);
+  color: var(--text);
   margin-bottom: 6px;
 }
 
 .project-description {
   font-size: 0.98rem;
-  color: #444;
+  color: var(--text-secondary);
   margin-bottom: 12px;
 }
 
@@ -359,7 +376,7 @@ body {
   padding: 4px 12px;
   border-radius: 16px;
   background: #f3f0ff;
-  color: #7c3aed;
+  color: var(--name);
   font-weight: 500;
   border: none;
   margin-bottom: 2px;
@@ -384,7 +401,9 @@ body {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  transition: background 0.2s, color 0.2s;
+  transition:
+    background 0.2s,
+    color 0.2s;
   box-shadow: 0 2px 8px #b03a9940;
   display: flex;
   align-items: center;
@@ -393,7 +412,7 @@ body {
 
 .btn-deploy {
   background: linear-gradient(45deg, #b03a99, #701f6e, #2f4f7f);
-  color: var(--background);
+  color: var(--text);
 }
 
 .btn-deploy:hover {
@@ -401,11 +420,15 @@ body {
 }
 
 .btn-code {
-  color: var(--primary);
+  color: var(--text);
 }
 
 .btn-code:hover {
-  color: var(--secondary);
+  color: var(--surface);
+  transition:
+    background 0.2s,
+    color 0.2s;
+  box-shadow: 0 4px 8px #b03a9940;
 }
 
 .btn i {
@@ -416,9 +439,9 @@ body {
 
 .main-footer {
   background: var(--footer);
-  color: var(--background);
+  color: var(--primary);
   box-sizing: border-box;
-  padding: 32px 24px 0 32px;
+  padding: 20px 24px 0 24px;
   width: 100vw;
 }
 
@@ -438,20 +461,21 @@ body {
 }
 
 .footer-name {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 4px;
+  color: var(--name);
 }
 
 .footer-role {
   font-size: 0.8rem;
   font-weight: 400;
-  color: #ddd;
+  color: var(--surface);
 }
 
 .footer-icon {
-  background: var(--background);
-  color: var(--footer);
+  background: var(--surface);
+  color: var(--name);
   border-radius: 50%;
   width: 38px;
   height: 38px;
@@ -465,9 +489,9 @@ body {
 }
 
 .footer-icon:hover {
-  border: 2px solid var(--background);
-  background: var(--footer);
-  color: var(--background);
+  border: 2px solid var(--surface);
+  background: var(--accent-dark);
+  color: var(--surface);
 }
 
 .footer-right {
@@ -477,10 +501,10 @@ body {
 
 .footer-bottom {
   border: none;
-  border-top: 1px solid var(--background);
   text-align: center;
-  font-size: 0.98rem;
+  font-size: 0.8rem;
   padding: 18px;
+  color: var(--surface);
 }
 
 /* Utility Classes */

@@ -1,5 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const revealElements = document.querySelectorAll('.scroll-reveal');
+        
+  
+  // Scroll reveal
+  const revealElements = document.querySelectorAll('.scroll-reveal');
     
     const observerOptions = {
         root: null,
@@ -20,4 +23,12 @@ document.addEventListener('DOMContentLoaded', function() {
     revealElements.forEach(element => {
         scrollObserver.observe(element);
     });
-});
+
+    // Remove a classe 'hidden' da navbar após animação
+    const navbar = document.querySelector(".navbar");
+     if (navbar) {
+       setTimeout(() => {
+         navbar.classList.remove("hidden");
+       }, 400);
+     }
+    });
